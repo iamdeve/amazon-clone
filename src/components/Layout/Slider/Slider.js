@@ -3,9 +3,7 @@ import TopCategory from '../TopCategory/TopCategory';
 import './Slider.css';
 
 class Slide extends React.Component {
-	constructor(props) {
-		super(props);
-	}
+
 	render() {
 		let slideStyle = { backgroundImage: `url( ${this.props.background})` };
 		return (
@@ -17,10 +15,9 @@ class Slide extends React.Component {
 }
 
 class Slider extends Component {
-	constructor(props) {
-		super(props);
-		this.state = { activeSlide: 0 };
-	}
+	state = {
+		activeSlide: 0,
+	};
 	prevSlide() {
 		let slide = this.state.activeSlide - 1 < 0 ? this.props.slides.length - 1 : this.state.activeSlide - 1;
 		this.setState({

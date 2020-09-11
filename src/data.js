@@ -95,7 +95,6 @@ import BAC_IMG_8_1 from './assets/products/BeautyCare/t_b_a_p_c_p-8.jpg';
 import BAC_IMG_9_1 from './assets/products/BeautyCare/t_b_a_p_c_p-9.jpg';
 import BAC_IMG_10_1 from './assets/products/BeautyCare/t_b_a_p_c_p-10.jpg';
 
-
 const all_products = [
 	{
 		heading: 'Best Sellers in Kitchen',
@@ -1441,9 +1440,9 @@ const all_products = [
 				images: [WIP_IMG_10_1],
 			},
 		],
-    },
-    
-    {
+	},
+
+	{
 		heading: 'Top Beauty & Personal Care products',
 		link: 'beauty-care',
 		linkText: 'Shop now',
@@ -1663,7 +1662,7 @@ const all_products = [
 					"ENJOY TILL THE LAST SIP: Toss your S'well bottle with our leak-free cap in your work or gym bag or clip onto backpacks or bags for hands-free portability without worrying about spills or drips.",
 				],
 				link: '010',
-				images: [HAD_IMG_10_1],
+				images: [BAC_IMG_10_1],
 			},
 		],
 	},

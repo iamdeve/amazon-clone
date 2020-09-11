@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './CustomCarousel.module.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import {Link} from 'react-router-dom'
 import UAParser from 'ua-parser-js';
 const responsive = {
 	superLargeDesktop: {
@@ -22,36 +23,36 @@ const responsive = {
 		items: 1,
 	},
 };
-const CustomRightArrow = ({ onClick, ...rest }) => {
-	const {
-		onMove,
-		carouselState: { currentSlide, deviceType },
-	} = rest;
-	// onMove means if dragging or swiping in progress.
-	return (
-		<button className='btn' onClick={() => onClick()}>
-			asdf
-		</button>
-	);
-};
-const CustomLeftArrow = ({ onClick, ...rest }) => {
-	const {
-		onMove,
-		carouselState: { currentSlide, deviceType },
-	} = rest;
-	// onMove means if dragging or swiping in progress.
-	return (
-		<button className='btn' onClick={() => onClick()}>
-			asdf
-		</button>
-	);
-};
+// const CustomRightArrow = ({ onClick, ...rest }) => {
+// 	const {
+// 		onMove,
+// 		carouselState: { currentSlide, deviceType },
+// 	} = rest;
+// 	// onMove means if dragging or swiping in progress.
+// 	return (
+// 		<button className='btn' onClick={() => onClick()}>
+// 			asdf
+// 		</button>
+// 	);
+// };
+// const CustomLeftArrow = ({ onClick, ...rest }) => {
+// 	const {
+// 		onMove,
+// 		carouselState: { currentSlide, deviceType },
+// 	} = rest;
+// 	// onMove means if dragging or swiping in progress.
+// 	return (
+// 		<button className='btn' onClick={() => onClick()}>
+// 			asdf
+// 		</button>
+// 	);
+// };
 function CustomCarousel({ data, heading, customLink, deviceType }) {
 	return (
 		<div className={classes.custom__carousel__container}>
 			<div className={classes.category__header}>
 				<h4>{heading} &nbsp;</h4>
-				<a href={customLink}>Click to learn more</a>
+				<Link to={customLink}>Click to learn more</Link>
 			</div>
 			<Carousel
 				// nextArrow={<CustomRightArrow />}
@@ -64,15 +65,13 @@ function CustomCarousel({ data, heading, customLink, deviceType }) {
 				// autoPlay={true}
 				autoPlaySpeed={4000}
 				keyBoardControl={true}
-				deviceType={deviceType}
 				// customTransition='all .5'
 				transitionDuration={500}
 				containerClass='carousel-container'
 				removeArrowOnDeviceType={['tablet', 'mobile']}
 				dotListClass='custom-dot-list-style'
-				itemClass='carousel-item-padding-40-px'
 				ssr
-				partialVisbile
+				// partialVisbile
 				deviceType={deviceType}
 				itemClass='image-item'
 				responsive={responsive}>

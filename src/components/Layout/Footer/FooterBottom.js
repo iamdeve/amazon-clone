@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './FooterBottom.module.css';
-import { Container } from 'react-bootstrap';
 
 const footer_bottom_links = [
 	{
@@ -226,8 +225,8 @@ function FooterBottom() {
 		<div className={classes.footer__bottom__wrapper}>
 			<div className='container'>
 				<div className={classes.footer__bottom}>
-					{footer_bottom_links.map((links) => (
-						<div className={classes.links}>
+					{footer_bottom_links.map((links, id) => (
+						<div key={id} className={classes.links}>
 							<a href={links.link}>
 								<span className={classes.text}> {links.text}</span>
 								<span className={classes.subText}> {links.subText}</span>

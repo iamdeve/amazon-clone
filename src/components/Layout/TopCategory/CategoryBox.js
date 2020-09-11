@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './CategoryBox.module.css';
-import { Button } from 'react-bootstrap';
 function CategoryBox({ heading, images, footer, id }) {
 	return (
 		<div className={classes.category__box}>
