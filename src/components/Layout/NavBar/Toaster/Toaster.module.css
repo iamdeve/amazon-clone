@@ -1,0 +1,35 @@
+@import url(../../../../variables.css);
+
+.app__toaster {
+	background-color: var(--toaster-color);
+	padding: 0.8rem;
+	border: 1px solid #000;
+	animation: slideDown 1s ease-in;
+}
+
+.app__toaster p {
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+	animation: slideDownP 1s ease-in;
+}
+
+@keyframes slideDown {
+	from {
+		height: 0vh;
+		padding: 0rem;
+	}
+	to {
+		height: 8vh;
+		padding: 0.8rem;
+	}
+}
+
+@keyframes slideDownP {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 100;
+	}
+}

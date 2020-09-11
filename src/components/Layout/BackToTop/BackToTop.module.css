@@ -1,0 +1,13 @@
+@import url(../../../variables.css);
+
+.app__back_to_top {
+	padding: 15px;
+	text-align: center;
+	font-size: 13px;
+	background-color: var(--back-to-top-bg);
+	color: #fff;
+}
+.app__back_to_top:hover {
+    background-color: #37475ab5;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+@import url(../../../variables.css);
+.footer__bottom__wrapper {
+	background-color: var(--footer-bottom-bg);
+}
+
+.footer__bottom {
+	max-width: 1000px;
+	margin: auto;
+	padding: 2rem 0;
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+     */
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.links a {
+	color: #fff;
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+	grid-gap: 0.1rem 3rem;
+	margin: 0.3rem;
+	white-space: pre-line;
+}
+.links a span:nth-child(2) {
+	font-size: 11px;
+	color: #777;
+}
+.footer__copyright {
+    text-align: center;
+    font-size: 13px;
+}
+.footer__copyright ul {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin-right: 0.2rem;
+}
+.footer__copyright ul li {
+	display: inline-block;
+	margin: 0 0.2rem;
+}
+.footer__copyright ul li a {
+	color: #fff;
+}
+.footer__copyright span {
+	color: #777;
+}

@@ -1,13 +1,46 @@
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+@font-face {
+	font-family: 'Amazon Ember';
+	src: url('//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot');
+	src: url('//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix') format('embedded-opentype'), url('//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2') format('woff2'), url('//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff') format('woff'),
+		url('//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf') format('truetype'), url('//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember') format('svg');
+}
+@import url(variables.css);
+* {
+	margin: 0;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Amazon Ember', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
+	margin: 0;
+	background: var(--context-bg) !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-custom {
+	background: #f0c14b;
+	border-color: #a88734 #9c7e31 #846a29;
+	width: 100%;
+	color: #111;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 0.3rem;
+}
+.react-multiple-carousel__arrow--right,
+.react-multiple-carousel__arrow--left {
+	right: 0.1rem !important;
+	border-radius: 0 !important;
+	height: 6rem;
+	box-shadow: 0 0 2px #ddd !important;
+	background: #fff !important;
+	opacity: 0.1 !important;
+}
+.react-multiple-carousel__arrow--right:hover,
+.react-multiple-carousel__arrow--left:hover {
+	opacity: 1 !important;
+}
+.react-multiple-carousel__arrow--left {
+	left: 0.1rem !important;
+}
+.react-multiple-carousel__arrow::before {
+	font-size: 24px;
+	color: #444 !important;
 }

@@ -1,0 +1,17 @@
+:root {
+	--top-nav: #131921;
+	--nav-color: #cccccc94;
+	--bottom-nav: #232f3e;
+	--bottom-color: #ccc;
+	--item-anchor-color: #0f1111;
+	--secondary-color: #f08804;
+	--signin-btn-bg: #f3d078;
+	--search-outline: #febd69;
+	--category-title-color: #444;
+	--link-color: #0066c0;
+	--back-to-top-bg: #37475A;
+	--footer-top-bg: #232f3e;
+	--footer-bottom-bg: #131a22;
+	--toaster-color: #d8f7eb;
+	--context-bg:#e6e6e6;
+}

@@ -1,0 +1,51 @@
+@import url(../../../variables.css);
+.app__bottom__bar {
+	background-color: var(--bottom-nav);
+	border-top: 1px solid var(--bottom-nav);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav__sprite {
+	background-image: url(../../../assets/sprite.png);
+	background-position: 0 1000px;
+}
+.bootom__bar__left {
+	flex: 0.279;
+}
+.bootom__bar__middle {
+	flex: 1.2;
+}
+.marker,
+.marker > a {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.delievery__address {
+	display: flex;
+	flex-direction: column;
+}
+.bootom__link {
+	line-height: 1rem;
+	padding: 0.2rem;
+	color: #fff;
+	margin: 0 0.1rem;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.bootom__link:hover {
+	text-decoration: none;
+	color: #fff;
+	border-color: #fff;
+}
+.bootom__bar__middle > a {
+	color: var(--bottom-color);
+}
+.bottom__marker {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-position: -68px -340px;
+}
