@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './FooterBottom.module.css';
+import { Link } from 'react-router-dom';
 
 const footer_bottom_links = [
 	{
@@ -227,23 +228,23 @@ function FooterBottom() {
 				<div className={classes.footer__bottom}>
 					{footer_bottom_links.map((links, id) => (
 						<div key={id} className={classes.links}>
-							<a href={links.link}>
+							<Link to={links.link}>
 								<span className={classes.text}> {links.text}</span>
 								<span className={classes.subText}> {links.subText}</span>
-							</a>
+							</Link>
 						</div>
 					))}
 				</div>
 				<div className={classes.footer__copyright}>
 					<ul>
 						<li>
-							<a href='/'>Conditions of Use</a>
+							<Link to='/'>Conditions of Use</Link>
 						</li>
 						<li>
-							<a href='/'>Privacy Notice</a>
+							<Link to='/'>Privacy Notice</Link>
 						</li>
 						<li>
-							<a href='/'>Interest-Based Ads</a>
+							<Link to='/'>Interest-Based Ads</Link>
 						</li>
 					</ul>
 					<span>&copy; 1996-{new Date().getFullYear()}, Amazon.com, Inc. or its affiliates</span>

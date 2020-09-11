@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './FooterTop.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom'
 const footer_links_1 = [
 	{ link: 'careers', text: 'Careers' },
 	{ link: 'blog', text: 'Blog' },
@@ -50,7 +50,7 @@ function FooterTop() {
 									<ul className={classes.footer__link}>
 										{footer_links_1.map((link, id) => (
 											<li key={id}>
-												<a href={`/${link.link}`}>{link.text}</a>
+												<Link to={`/${link.link}`}>{link.text}</Link>
 											</li>
 										))}
 									</ul>
@@ -62,7 +62,7 @@ function FooterTop() {
 									<ul className={classes.footer__link}>
 										{footer_links_2.map((link, id) => (
 											<li key={id}>
-												<a href={`/${link.link}`}>{link.text}</a>
+												<Link to={`/${link.link}`}>{link.text}</Link>
 											</li>
 										))}
 									</ul>
@@ -74,7 +74,7 @@ function FooterTop() {
 									<ul className={classes.footer__link}>
 										{footer_links_3.map((link, id) => (
 											<li key={id}>
-												<a href={`/${link.link}`}>{link.text}</a>
+												<Link to={`/${link.link}`}>{link.text}</Link>
 											</li>
 										))}
 									</ul>
@@ -86,7 +86,7 @@ function FooterTop() {
 									<ul className={classes.footer__link}>
 										{footer_links_4.map((link, id) => (
 											<li key={id}>
-												<a href={`/${link.link}`}>{link.text}</a>
+												<Link to={`/${link.link}`}>{link.text}</Link>
 											</li>
 										))}
 									</ul>
@@ -99,9 +99,9 @@ function FooterTop() {
 			<div className={classes.footer__footer}>
 				<div className={classes.footer__items}>
 					<div className={classes.footer__logo}>
-						<a href='/'>
+						<Link to='/'>
 							<span className={[classes.nav__sprite, classes.footer__sprite].join(' ')}></span>
-						</a>
+						</Link>
 					</div>
 					<div className={classes.footer__language_btn}>
 						<button className={[classes.btn__footer].join(' ')}>

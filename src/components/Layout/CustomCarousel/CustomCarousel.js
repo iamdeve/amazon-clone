@@ -78,9 +78,9 @@ function CustomCarousel({ data, heading, customLink, deviceType }) {
 				{data.map((item, id) => {
 					return (
 						<div key={id} className={classes.car_img}>
-							<a href='/'>
+							<Link to='/'>
 								<img src={item.images[0]} alt={`car_img${id}`} />
-							</a>
+							</Link>
 						</div>
 					);
 				})}
