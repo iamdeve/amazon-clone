@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './CustomCarousel.module.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import UAParser from 'ua-parser-js';
 const responsive = {
 	superLargeDesktop: {
@@ -47,12 +47,12 @@ const responsive = {
 // 		</button>
 // 	);
 // };
-function CustomCarousel({ data, heading, customLink, deviceType }) {
+function CustomCarousel({ info, data, heading, customLink, deviceType }) {
 	return (
 		<div className={classes.custom__carousel__container}>
 			<div className={classes.category__header}>
 				<h4>{heading} &nbsp;</h4>
-				<Link to={customLink}>Click to learn more</Link>
+				<Link to={`/shop-now/${heading.toLowerCase().split(' ').join('-')}`}>Click to learn more</Link>
 			</div>
 			<Carousel
 				// nextArrow={<CustomRightArrow />}
@@ -78,7 +78,42 @@ function CustomCarousel({ data, heading, customLink, deviceType }) {
 				{data.map((item, id) => {
 					return (
 						<div key={id} className={classes.car_img}>
-							<Link to='/'>
+							{info ? (
+								<div className={classes.item__info__wrapper}>
+									<div className={classes.item__rating}>
+										{parseInt(item.stars.split('.')[0]) === 4 && parseInt(item.stars.split('.')[1]) ? (
+											<span>
+												<span style={{ color: '#febd69' }} className='fa fa-star'></span>
+												<span style={{ color: '#febd69' }} className='fa fa-star'></span>
+												<span style={{ color: '#febd69' }} className='fa fa-star'></span>
+												<span style={{ color: '#febd69' }} className='fa fa-star'></span>
+												<span style={{ color: '#febd69' }} className='fa fa-star-half'></span>
+											</span>
+										) : (
+											<span>
+												<span style={{ color: '#febd69' }} className='fa fa-star'></span>
+												<span style={{ color: '#febd69' }} className='fa fa-star'></span>
+												<span style={{ color: '#febd69' }} className='fa fa-star'></span>
+												<span style={{ color: '#febd69' }} className='fa fa-star'></span>
+												<span style={{ color: 'white' }} className='fa fa-star'></span>
+											</span>
+										)}
+										&nbsp;{item.rating}
+									</div>
+									<div className={classes.item__name}>{`${item.name.split(' ')[0]} ${item.name.split(' ')[1]} ${item.name.split(' ')[2]}`}</div>
+									<div className={classes.item__add__to__cart}>
+										<button className={classes.btn__add_to__cart}>
+											<span></span> <span>Add to Cart</span>
+										</button>
+									</div>
+									<div className={classes.item__view__product}>
+										<Link to={`/shop-now/${heading.toLowerCase().split(' ').join('-')}/${item.id}`} title="View Product" className={classes.btn__view__product}>
+											<span></span> <span></span>
+										</Link>
+									</div>
+								</div>
+							) : null}
+							<Link to={`/shop-now/${heading.toLowerCase().split(' ').join('-')}/${item.id}`}>
 								<img src={item.images[0]} alt={`car_img${id}`} />
 							</Link>
 						</div>

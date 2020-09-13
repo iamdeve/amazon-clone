@@ -1,5 +1,7 @@
 import React from 'react';
 import classes from './CategoryBox.module.css';
+import { Link } from 'react-router-dom';
+
 function CategoryBox({ heading, images, footer, id }) {
 	return (
 		<div className={classes.category__box}>
@@ -24,7 +26,7 @@ function CategoryBox({ heading, images, footer, id }) {
 					)}
 				</div>
 			</div>
-			<div className={classes.category__box__footer}>{id === 3 ? null : <a href='/'>{footer}</a>}</div>
+			<div className={classes.category__box__footer}>{id === 3 ? null : <Link to='/shop-now'>{footer}</Link>}</div>
 		</div>
 	);
 }

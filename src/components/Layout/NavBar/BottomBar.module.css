@@ -5,6 +5,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 .5rem;
 }
 .nav__sprite {
 	background-image: url(../../../assets/sprite.png);
@@ -25,6 +26,12 @@
 .delievery__address {
 	display: flex;
 	flex-direction: column;
+}
+.delievery__address  span:first-child{
+	font-size: 12px;
+}
+.delievery__address span{
+ margin: 0 .2rem;
 }
 .bootom__link {
 	line-height: 1rem;

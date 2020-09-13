@@ -6,11 +6,15 @@ import 'font-awesome/css/font-awesome.css';
 import App from './containers/App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import reducer, { initialState } from './store/reducer';
+import { StateProvider } from './store/StateProvider';
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
-			<App />
+			<StateProvider initialState={initialState} reducer={reducer}>
+				<App />
+			</StateProvider>
 		</Router>
 	</React.StrictMode>,
 	document.getElementById('root'),

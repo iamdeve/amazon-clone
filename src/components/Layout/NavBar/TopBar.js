@@ -31,14 +31,23 @@ function TopBar() {
 				<div className={[classes.topbar__form__container, focused ? classes.Focus : ''].join(' ')}>
 					<div className={classes.form__categories}>
 						<DropdownButton className={classes.category__dropdown} title='All'>
-							<Dropdown.Item as={Link} to='#/action-1'>
-								Action
+							<Dropdown.Item as={Link} to='/toys'>
+								Animal Toys
 							</Dropdown.Item>
-							<Dropdown.Item as={Link} to='#/action-2'>
-								Another action
+							<Dropdown.Item as={Link} to='/beauty-care'>
+								Beauty &amp; Care
 							</Dropdown.Item>
-							<Dropdown.Item as={Link} to='#/action-3'>
-								Something else
+							<Dropdown.Item as={Link} to='/electronics'>
+								Electronics
+							</Dropdown.Item>
+							<Dropdown.Item as={Link} to='/gifts'>
+								Gifts
+							</Dropdown.Item>
+							<Dropdown.Item as={Link} to='/home-decore'>
+								Home Decoure
+							</Dropdown.Item>
+							<Dropdown.Item as={Link} to='/kitchen'>
+								Kitchen
 							</Dropdown.Item>
 						</DropdownButton>
 					</div>
@@ -54,31 +63,32 @@ function TopBar() {
 			</div>
 			<div className={classes.topbar__nav__right}>
 				<div className={classes.language__dropdown}>
-					<Button id='language__dropdown'>
-						<img className={classes.language__img} src={PK} alt='language img' />
-						<span>
-							&nbsp; <i className='fa fa-caret-down'></i>
-						</span>
-					</Button>
 					<div className={classes.back__drop}></div>
 					<div className={classes.top__bar_dropdown}>
-						<div className={classes.top__bar_dropdown__menu}>
-							<div className={classes.language__dropdown__1st_step}>
+						<Button id='language__dropdown'>
+							<img className={classes.language__img} src={PK} alt='language img' />
+							<span>
+								&nbsp; <i className='fa fa-caret-down'></i>
+							</span>
+						</Button>
+						<ul className={classes.top__bar_dropdown_menu}>
+							<div className={classes.arrow__up}></div>
+							<li className={classes.language__dropdown__1st_step}>
 								Change language <Link to='/'>Learn more </Link>
-							</div>
-							<div className={classes.language__dropdown__2st_step}>English - EN</div>
-							<div className='divider'></div>
-							<div className={classes.language__dropdown__3st_step}>
+							</li>
+							<li className={classes.language__dropdown__2st_step}>English - EN</li>
+							<li className='divider'></li>
+							<li className={classes.language__dropdown__3st_step}>
 								Change currency <Link to=''>Learn more</Link>
-							</div>
-							<div className={classes.language__dropdown__4st_step}>
-								<span>$ - USD - U.S. Dollar</span> <Link to="/">Change</Link>
-							</div>
+							</li>
+							<li className={classes.language__dropdown__4st_step}>
+								<span>$ - USD - U.S. Dollar</span> <Link to='/'>Change</Link>
+							</li>
 							<img className={classes.language__img} src={PK} alt='language img' /> You are shopping on Amazon.com.
-							<div>
+							<li>
 								<Link to='/'>Change country/region.</Link>
-							</div>
-						</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 

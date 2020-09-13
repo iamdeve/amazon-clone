@@ -21,6 +21,10 @@
 	grid-gap: 0.1rem 3rem;
 	margin: 0.3rem;
 	white-space: pre-line;
+	text-decoration: none;
+}
+.links a:hover span{
+	text-decoration: underline;
 }
 .links a span:nth-child(2) {
 	font-size: 11px;
@@ -42,6 +46,7 @@
 }
 .footer__copyright ul li a {
 	color: #fff;
+	
 }
 .footer__copyright span {
 	color: #777;

@@ -1,0 +1,7 @@
+.products_lists_wrapper .BreadCrumbs {
+	padding: 1rem 1rem 1rem 1rem;
+}
+
+.products_lists_wrapper .BreadCrumbs a,.products_lists_wrapper .BreadCrumbs p{
+	font-size: 12px;
+}

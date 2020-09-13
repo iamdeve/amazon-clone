@@ -30,15 +30,35 @@ import BSK_IMG_10_2 from './assets/products/BestKitchen/b_s_k_p-10-2.jpg';
 import BSK_IMG_10_3 from './assets/products/BestKitchen/b_s_k_p-10-3.jpg';
 
 import TVG_IMG_1_1 from './assets/products/VideoGame/t_i_v_g_p-1.jpg';
+import TVG_IMG_1_2 from './assets/products/VideoGame/t_i_v_g_p-1-2.jpg';
+import TVG_IMG_1_3 from './assets/products/VideoGame/t_i_v_g_p-1-3.jpg';
 import TVG_IMG_2_1 from './assets/products/VideoGame/t_i_v_g_p-2.jpg';
+import TVG_IMG_2_2 from './assets/products/VideoGame/t_i_v_g_p-2-2.jpg';
+import TVG_IMG_2_3 from './assets/products/VideoGame/t_i_v_g_p-2-3.jpg';
 import TVG_IMG_3_1 from './assets/products/VideoGame/t_i_v_g_p-3.jpg';
+import TVG_IMG_3_2 from './assets/products/VideoGame/t_i_v_g_p-3-2.jpg';
+import TVG_IMG_3_3 from './assets/products/VideoGame/t_i_v_g_p-3-3.jpg';
 import TVG_IMG_4_1 from './assets/products/VideoGame/t_i_v_g_p-4.jpg';
+import TVG_IMG_4_2 from './assets/products/VideoGame/t_i_v_g_p-4-2.jpg';
+import TVG_IMG_4_3 from './assets/products/VideoGame/t_i_v_g_p-4-3.jpg';
 import TVG_IMG_5_1 from './assets/products/VideoGame/t_i_v_g_p-5.jpg';
+import TVG_IMG_5_2 from './assets/products/VideoGame/t_i_v_g_p-5-2.jpg';
+import TVG_IMG_5_3 from './assets/products/VideoGame/t_i_v_g_p-5-3.jpg';
 import TVG_IMG_6_1 from './assets/products/VideoGame/t_i_v_g_p-6.jpg';
+import TVG_IMG_6_2 from './assets/products/VideoGame/t_i_v_g_p-6-2.jpg';
+import TVG_IMG_6_3 from './assets/products/VideoGame/t_i_v_g_p-6-3.jpg';
 import TVG_IMG_7_1 from './assets/products/VideoGame/t_i_v_g_p-7.jpg';
+import TVG_IMG_7_2 from './assets/products/VideoGame/t_i_v_g_p-7-2.jpg';
+import TVG_IMG_7_3 from './assets/products/VideoGame/t_i_v_g_p-7-3.jpg';
 import TVG_IMG_8_1 from './assets/products/VideoGame/t_i_v_g_p-8.jpg';
+import TVG_IMG_8_2 from './assets/products/VideoGame/t_i_v_g_p-8-2.jpg';
+import TVG_IMG_8_3 from './assets/products/VideoGame/t_i_v_g_p-8-3.jpg';
 import TVG_IMG_9_1 from './assets/products/VideoGame/t_i_v_g_p-9.jpg';
+import TVG_IMG_9_2 from './assets/products/VideoGame/t_i_v_g_p-9-2.jpg';
+import TVG_IMG_9_3 from './assets/products/VideoGame/t_i_v_g_p-9-3.jpg';
 import TVG_IMG_10_1 from './assets/products/VideoGame/t_i_v_g_p-10.jpg';
+import TVG_IMG_10_2 from './assets/products/VideoGame/t_i_v_g_p-10-2.jpg';
+import TVG_IMG_10_3 from './assets/products/VideoGame/t_i_v_g_p-10-3.jpg';
 
 import ATS_IMG_1_1 from './assets/products/TopSeller/a_t_s_p-1.jpg';
 import ATS_IMG_2_1 from './assets/products/TopSeller/a_t_s_p-2.jpg';
@@ -97,7 +117,7 @@ import BAC_IMG_10_1 from './assets/products/BeautyCare/t_b_a_p_c_p-10.jpg';
 
 const all_products = [
 	{
-		heading: 'Best Sellers in Kitchen',
+		heading: 'Best Sellers In Kitchen',
 		link: 'best-seller',
 		linkText: 'Shop now',
 		products: [
@@ -113,7 +133,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'MORE THAN WAFFLES: Make paninis, hash browns, and even biscuit pizzas! Any wet batter will “waffle” your treats and snacks into single serving portions. Great for kids or on the go',
 					'COMPACT + LIGHTWEIGHT: Weighing 1lb+, this is a MUST-HAVE for that first apartment, smaller kitchen, college dorm life, or camper/RV traveling',
 					'QUICK + EASY: Simply plug it in and go; it heats up in mere minutes. The dual non-stick surfaces provide an even cook for consistent results, each and every time. 4 inch cooking surfaces for individual portions',
@@ -136,7 +156,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'THERMOS vacuum insulation technology for maximum temperature retention, hot or cold',
 					'Durable stainless steel interior and exterior',
 					'Wide mouth is easy to fill, serve from and clean',
@@ -158,7 +178,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Easy Blending Cycles: one-touch buttons, six pre-programmed cycles, pulse, and ten speed manual control with the ability to achieve a variety of textures. Complete control to adjust your blending at any time',
 					'Patented Blade/80% Thicker: Stainless-Steel forged blade, with wings, for amazingly smooth blends (10x stronger than other blender blades). Note: blade is not sharp, blade is dull. No more cuts or pokes',
 					'Self-Cleaning: add a little soap and water, your jar can clean itself in less than one minute. Illuminated LCD timer displays remaining time on blends',
@@ -180,7 +200,7 @@ const all_products = [
 				color: ['blue', 'green', 'yellow'],
 				save: '$3.67 (18%)',
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Long Lasting: The Longlast Filter lasts 6 months. That’s 3x longer compared to PUR Lead Reduction 30 gallon filter life and Zerowater 15 gallon filter life',
 					"Reduces lead: Longlast filters are certified by WQA to reduce 99% of lead, chlorine (taste and odor), cadmium, mercury, benzene, asbestos and more found in tap water for cleaner, great tasting water. Contaminants reduced may not be in all users' water",
 					'BPA free and easy installation: The Longlast Filter is BPA free and compatible with all Brita Pitchers except Stream and Infinity. Filter has a pull top cap which makes it quick and easy to change and there is no presoak or rinse required',
@@ -202,7 +222,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Taps into the booming craft cocktail and home mixologist trend',
 					'Stainless steel, wooden, and glass components instantly turn your home bar into a high-quality center of attention with a comprehensive 9-piece cocktail set including recipes',
 					'Includes 1, 2-ounce shot glass; 1, 20-ounce mixing glass; 1 metal strainer; 1 wooden muddler; 1 metal stir spoon; 1 metal shaker base; and 1, 3-piece metal shaker',
@@ -224,7 +244,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'The Zero Gravity wall mounted magnetic spice rack features unique space-saving design to keep spices close at Hand but out of the way',
 					'The spice Canisters are easy to use, allowing for one handed operation and each spice canister has 3 settings: closed, sprinkle, and pour',
 					'They are airtight to preserve freshness with a clear viewing window for easy spice identification',
@@ -245,7 +265,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Best selling model: America’s most loved multi cooker, built with the latest 3rd generation technology, the microprocessor monitors pressure, temperature, keeps time, and adjusts heating intensity and duration to achieve desired results every time',
 					'Cooks fast and saves time: The Instant Pot Duo multi-cooker combines 7 appliances in one: Pressure cooker, slow cooker, rice cooker, steamer, saute pan, yogurt maker and warmer – and cooks up to 70% faster',
 					'Consistently delicious: 14 one-touch smart programs put cooking ribs, soups, beans, rice, poultry, yogurt, desserts and more on autopilot – with tasty results',
@@ -266,7 +286,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Quick and easy: This sandwich maker cooks your breakfast, lunch, or dinner sandwich in just minutes. Perfect for brunch or a quick, healthy meal on the go.',
 					'Create custom sandwiches: Use this breakfast maker to completely customize your sandwich with your choice of bread, cheese, eggs, meats, and much more. Eliminate the bread and these are great for Keto and paleo diets too.',
 					'Get inspired: Explore more than 25 sandwich maker recipes on our website.',
@@ -288,7 +308,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Accurate, elegant, easy-to-use digital kitchen scale for your largest and smallest cooking projects - weighs up to 11.24 lbs (5100 grams) with precise graduations of 0.05 oz (1 gram).',
 					'Automatic Unit Button instantly converts between 5 units of measurements (g, lbs, lbs:oz, oz, ml) and displays results on an easy-to-read LCD screen - e.g. easily convert 539 grams to 1.188 pounds to 1 pound 3 ounces to 19.01 ounces to 539 ml.',
 					'Precision Tare Button calculates the net weight of your ingredients by automatically subtracting the weight of any bowl or container.',
@@ -309,7 +329,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Designed with your active lifestyle in mind.',
 					"STAINLESS STEEL SWING CAP: Our S'well Stainless Steel Swing Cap is designed with a hinged handle for comfortable, two-fingered carrying. Hand-wash only.",
 					"THE PERFECT FIT: Ideal for an on-the-go lifestyle, Swing Cap’s L-shaped, grab-and-go handle is ergonomically shaped for comfortable two-fingered carrying. Fits S'well bottles 9oz and 17oz sizes.",
@@ -321,36 +341,34 @@ const all_products = [
 		],
 	},
 	{
-		heading: 'Trending in Video Games',
+		heading: 'Trending In Video Games',
 		link: 'vide-games',
 		linkText: 'Shop now',
 		products: [
 			{
 				id: '001',
-				name: 'Dash Mini Maker: The Mini Waffle Maker Machine for Individual Waffles, Paninis, Hash browns, & other on the go Breakfast, Lunch, or Snacks - Red',
-				rating: '58,328',
+				name: 'Oculus Quest All-in-one VR Gaming Headset – 64GB',
+				rating: '5,915',
 				stars: '4.5',
-				listPrice: '14.99',
-				price: '9.99',
-				shipping: '47.23',
-				save: '$5.00 (33%)',
+				listPrice: null,
+				price: '697.99',
+				shipping: null,
+				save: null,
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'MORE THAN WAFFLES: Make paninis, hash browns, and even biscuit pizzas! Any wet batter will “waffle” your treats and snacks into single serving portions. Great for kids or on the go',
-					'COMPACT + LIGHTWEIGHT: Weighing 1lb+, this is a MUST-HAVE for that first apartment, smaller kitchen, college dorm life, or camper/RV traveling',
-					'QUICK + EASY: Simply plug it in and go; it heats up in mere minutes. The dual non-stick surfaces provide an even cook for consistent results, each and every time. 4 inch cooking surfaces for individual portions',
-					'PERFECT GIFT: The perfect wedding or new home gift. Its small size takes up little counter space, and its sleek design and trendy color options will match any kitchen décor. add to your registry now',
-					'INCLUDES: Backed by a 1-year manufacturer warranty, the Dash Mini Waffle maker includes recipe book and recipe database access all non-electric parts are easily wiped clean',
-					'U.S. BASED SUPPORT: Dash is a U.S. based company who provides contact information in each product manual',
+				description: [
+					'All-in-one VR: Simply set up the device with your Oculus mobile app and Oculus Quest has everything you need to explore VR, right out of the box',
+					'Insight tracking: Oculus Insight tracking system instantly reflects your movements in VR without the need for any external accessories',
+					'Touch controllers: Oculus Touch controllers precisely recreate your hands, their gestures and interactions, so every game is real enough to reach out and touch',
+					'Beyond room-scale: Oculus Quest works with your environment, so you can play standing or sitting, in spaces big or small',
 				],
 				link: '001',
-				images: [TVG_IMG_1_1],
+				images: [TVG_IMG_1_1, TVG_IMG_1_2, TVG_IMG_1_3],
 			},
 			{
 				id: '002',
-				name: 'Thermos Funtainer Food Jar, Frozen, 10 Ounce (Pack of 1)',
+				name: 'Darksiders Genesis - Nephilim Edition - PC Nephilim Edition',
 				rating: '13,572',
 				stars: '4.5',
 				listPrice: null,
@@ -360,19 +378,19 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'THERMOS vacuum insulation technology for maximum temperature retention, hot or cold',
-					'Durable stainless steel interior and exterior',
-					'Wide mouth is easy to fill, serve from and clean',
-					'Keeps cold for 7 hours and hot for 5 hours; stay cool exterior',
-					'10 ounce capacity; hand washing is recommended',
+				description: [
+					"The nephilim Edition contains all the loot from the Collector's Edition as well as the Limited Edition Darksiders: the forbidden land board game!",
+					'Blast Angels and demons as the gunslinging Horseman strife, playable for the first time',
+					'Swap between the powerful swordsman war and strife instantly in frenetic, single-player gameplay',
+					'Explore the epic world of Darksiders and wreak havoc with a friend in two-player cooperative mode',
+					'Experience a brand new story campaign that takes place before the original Darksiders, exploring the origin of the Seven seals',
 				],
 				link: '002',
-				images: [TVG_IMG_2_1],
+				images: [TVG_IMG_2_1, TVG_IMG_2_2, TVG_IMG_2_3],
 			},
 			{
 				id: '003',
-				name: 'Blendtec Total Classic Original Blender - WildSide+ Jar (90 oz) - Professional-Grade Power - 6 Pre-programmed Cycles - 10-speeds - Black (Renewed)',
+				name: 'BioShock Big Daddy Backpack',
 				rating: '806',
 				stars: '4.5',
 				listPrice: null,
@@ -382,19 +400,13 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'Easy Blending Cycles: one-touch buttons, six pre-programmed cycles, pulse, and ten speed manual control with the ability to achieve a variety of textures. Complete control to adjust your blending at any time',
-					'Patented Blade/80% Thicker: Stainless-Steel forged blade, with wings, for amazingly smooth blends (10x stronger than other blender blades). Note: blade is not sharp, blade is dull. No more cuts or pokes',
-					'Self-Cleaning: add a little soap and water, your jar can clean itself in less than one minute. Illuminated LCD timer displays remaining time on blends',
-					'Large Batches: BPA-Free WildSide+ jar is a 90 ounce volume jar with 36 ounce blending capacity (wet or dry) ideal for blending beverages for 4-6 people. Electrical Ratings: Volts 120, Hz 50-60, Amp 13, Cord: feet 35inches/3 feet',
-					'Warming Soup: Blendtec blenders heat soups and drinks through blade friction heat. Enjoy a warm meal or beverage in six minutes or less. Three Year /American Company: family-owned and driven to build the best quality products - without compromise. Engineered and assembled in the USA',
-				],
+				description: ['Officially licensed', 'Padded laptop pocket', 'Interior drawstring closure', 'Two adjustable shoulder straps', '11"L x 14"W x 5"D'],
 				link: '003',
-				images: [TVG_IMG_3_1],
+				images: [TVG_IMG_3_1, TVG_IMG_3_2, TVG_IMG_3_3],
 			},
 			{
 				id: '004',
-				name: 'Brita Longlast Water Filter, Longlast Replacement Filters for Pitcher and Dispensers, Reduces Lead, BPA Free - 1 Count',
+				name: 'Oculus Rift S PC-Powered VR Gaming Headset',
 				rating: '2,916',
 				stars: '4',
 				listPrice: '19.99',
@@ -404,19 +416,18 @@ const all_products = [
 				color: ['blue', 'green', 'yellow'],
 				save: '$3.67 (18%)',
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'Long Lasting: The Longlast Filter lasts 6 months. That’s 3x longer compared to PUR Lead Reduction 30 gallon filter life and Zerowater 15 gallon filter life',
-					"Reduces lead: Longlast filters are certified by WQA to reduce 99% of lead, chlorine (taste and odor), cadmium, mercury, benzene, asbestos and more found in tap water for cleaner, great tasting water. Contaminants reduced may not be in all users' water",
-					'BPA free and easy installation: The Longlast Filter is BPA free and compatible with all Brita Pitchers except Stream and Infinity. Filter has a pull top cap which makes it quick and easy to change and there is no presoak or rinse required',
-					"Great tasting: Brita Longlast filters reduce 13 contaminants found in tap water including Chlorine (taste and odor). Substances reduced may not be found in all users' water",
-					'Reduce waste & save: One Brita Longlast Filter can replace 900 standard 16 oz. water bottles. You’ll stay hydrated, save money, and reduce plastic waste. Height 5.31; Width 2.31; Length/Depth 2.31; Weight .13 pounds',
+				description: [
+					'Top VR gaming library: Blast, slash and soar your way through the top library in VR gaming. Oculus Rift S lets you play hundreds of games and exclusives already available in the Oculus store, with so much more to come.',
+					'Improved optics: Stare down the competition with next-generation lenses and a sharper display. Improved optics deliver bright, vivid colors and reduced “screen-door” effect.',
+					'Ergonomic design: keep your head in the game thanks to a Halo headband redesigned with speed in mind. Rift S stays securely and comfortably in place with a quick twist of the Fit wheel, so it can take-or double take-your fastest reactions.',
+					'Oculus touch controllers: arm yourself with our updated Oculus touch controllers. Your slashes, throws and grab appear in VR with intuitive, realistic Precision, transporting your hands and gestures right into the game.',
 				],
 				link: '004',
-				images: [TVG_IMG_4_1],
+				images: [TVG_IMG_4_1, TVG_IMG_4_2, TVG_IMG_4_3],
 			},
 			{
 				id: '005',
-				name: 'Libbey Mixologist 9-Piece Cocktail Set',
+				name: 'The Sims 4 - PC/Mac',
 				rating: '241',
 				stars: '4.5',
 				listPrice: '39.99',
@@ -426,105 +437,103 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'Taps into the booming craft cocktail and home mixologist trend',
-					'Stainless steel, wooden, and glass components instantly turn your home bar into a high-quality center of attention with a comprehensive 9-piece cocktail set including recipes',
-					'Includes 1, 2-ounce shot glass; 1, 20-ounce mixing glass; 1 metal strainer; 1 wooden muddler; 1 metal stir spoon; 1 metal shaker base; and 1, 3-piece metal shaker',
-					"Lead-free. Securely packaged in shipping box; always wash prior to use as orders fulfilled by Libbey are shipped directly from manufacturer's warehouse",
-					'Glass components are durable and dishwasher safe for quick, easy cleanup; to help preserve your products, please refer to the Libbey website for care and handling instructions',
+				description: [
+					'Create unique sims: A variety of sims are yours to personalize, each with distinct appearances, dynamic personalities, and inspiring aspirations',
+					'Build the perfect home: Construct the home of your, and their dreams by planning its layout, choosing furnishings, and altering the landscape and terrain',
+					'Explore vibrant worlds: Travel between locations, discover amazing and distinctive neighborhoods, and encounter captivating venues',
+					'Play with life: Control the rich and entertaining moments of your Sims’ lives from their relationships to their careers',
 				],
 				link: '005',
-				images: [TVG_IMG_5_1],
+				images: [TVG_IMG_5_1, TVG_IMG_5_2, TVG_IMG_5_3],
 			},
 			{
 				id: '006',
-				name: 'Zevro Zero Gravity Wall-Mount Magnetic Spice Rack Canisters, Red/Silver - Set of 12',
-				rating: '355',
-				stars: '4',
+				name: 'DualShock 4 Wireless Controller for PlayStation 4 - Midnight Blue',
+				rating: ' 65,331',
+				stars: '4.5',
 				listPrice: '39.99',
-				price: '32.63',
+				price: '64.63',
 				shipping: '71.86',
 				save: '$7.36 (18%)',
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'The Zero Gravity wall mounted magnetic spice rack features unique space-saving design to keep spices close at Hand but out of the way',
-					'The spice Canisters are easy to use, allowing for one handed operation and each spice canister has 3 settings: closed, sprinkle, and pour',
-					'They are airtight to preserve freshness with a clear viewing window for easy spice identification',
-					'The compact, space saving design allows top and bottom canister placement for maximum efficiency',
+				description: [
+					"Precision control: The feel, shape, and sensitivity of the Dualshock 4's analog sticks and trigger buttons have been enhanced to offer players absolute control for all games on PlayStation 4",
+					'Sharing at your fingertips: The addition of the share button makes sharing your greatest gaming moments as easy as a push of a button',
+					'New ways to play: Revolutionary features like the touch pad, integrated light bar, and built in speaker offer exciting new ways to experience and interact with your games',
+					'Charge Efficiently: The Dualshock 4 wireless controller can be easily be recharged by plugging it into your PS4 system, even when on standby, or with any standard charger with a micro USB port',
+					'Note: Kindly refer to the user manual provided as a PDF manual in the product description section',
 				],
 				link: '006',
-				images: [TVG_IMG_6_1],
+				images: [TVG_IMG_6_1, TVG_IMG_6_2, TVG_IMG_6_3],
 			},
 			{
 				id: '007',
-				name: 'Instant Pot Duo 7-in-1 Electric Pressure Cooker, Sterilizer, Slow Cooker, Rice Cooker, Steamer, Saute, Yogurt Maker, and Warmer, 6 Quart, 14 One-Touch Programs',
-				rating: '97,499',
+				name: 'Final Fantasy VII Remake - PlayStation 4 Deluxe Edition',
+				rating: '3409',
 				stars: '4.5',
 				listPrice: '99.95',
-				price: '79.00',
+				price: '95.00',
 				shipping: '128.89',
 				save: '$20.95 (21%)',
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'Best selling model: America’s most loved multi cooker, built with the latest 3rd generation technology, the microprocessor monitors pressure, temperature, keeps time, and adjusts heating intensity and duration to achieve desired results every time',
-					'Cooks fast and saves time: The Instant Pot Duo multi-cooker combines 7 appliances in one: Pressure cooker, slow cooker, rice cooker, steamer, saute pan, yogurt maker and warmer – and cooks up to 70% faster',
-					'Consistently delicious: 14 one-touch smart programs put cooking ribs, soups, beans, rice, poultry, yogurt, desserts and more on autopilot – with tasty results',
-					'Easy to clean: Fingerprint-resistant stainless steel lid and components and accessories are dishwasher safe',
+				description: [
+					'Deluxe Edition Includes - FINAL FANTASY VII REMAKE game, Artbook, Mini Soundtrack, Steelbook, Cactuar Summon Materia DLC',
+					'EXPLORE A DARK & ECLECTIC WORLD – Dive deep into the heart of the neo-noir metropolis of Midgar. This retro-futuristic city comes to life giving players access to re-envisioned locations and new districts; What secrets will you uncover',
+					'GENESIS OF A RESISTANCE – See how some of the most iconic characters in gaming began their journey; Discover their deep back stories and master each of their unique fighting styles to find success on the battlefield',
+					'CHOOSE HOW YOU WANT TO PLAY - FINAL FANTASY VII REMAKE features a hybrid gameplay system that merges real-time action with strategic, command-based combat',
 				],
 				link: '007',
-				images: [TVG_IMG_7_1],
+				images: [TVG_IMG_7_1, TVG_IMG_7_2, TVG_IMG_7_3],
 			},
 			{
 				id: '008',
-				name: 'Hamilton Beach Breakfast Sandwich Maker, Silver (25475A)',
-				rating: '9,679 ',
+				name: 'Sega Genesis Mini - Genesis',
+				rating: '4,779 ',
 				stars: '4.5',
-				listPrice: null,
-				price: '29.99',
-				shipping: '59.34 ',
-				save: null,
+				listPrice: '79.99',
+				price: '49.99.99',
+				shipping: '159.34 ',
+				save: '$30.00 (38%)',
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'Quick and easy: This sandwich maker cooks your breakfast, lunch, or dinner sandwich in just minutes. Perfect for brunch or a quick, healthy meal on the go.',
-					'Create custom sandwiches: Use this breakfast maker to completely customize your sandwich with your choice of bread, cheese, eggs, meats, and much more. Eliminate the bread and these are great for Keto and paleo diets too.',
-					'Get inspired: Explore more than 25 sandwich maker recipes on our website.',
-					"Just 4 easy steps: Building your breakfast sandwich comes together in just a few steps with a breakfast maker—and you don't even need to leave your house.",
-					'Easy to clean: Fingerprint-resistant stainless steel lid and components and accessories are dishwasher safe',
+				description: [
+					'The iconic SEGA Genesis console that defined a generation of gaming returns in a slick, miniaturized unit.',
+					'The SEGA Genesis Mini console is loaded with 42 legendary games and is plug and play ready right out of the box!',
+					'Box contents: Sega Genesis Mini console and 2 wired controllers, 40 games + 2 bonus games, power cable and USB adapter, and HDMI cable.',
 				],
 				link: '008',
-				images: [TVG_IMG_8_1],
+				images: [TVG_IMG_8_1, TVG_IMG_8_2, TVG_IMG_8_3],
 			},
 			{
 				id: '009',
-				name: 'Ozeri ZK14-S Pronto Digital Multifunction Kitchen and Food Scale, Black',
-				rating: '34,737',
+				name: 'DualShock 4 Wireless Controller for PlayStation 4 - Magma Red',
+				rating: '39,737',
 				stars: '4.5',
-				listPrice: '14.95',
-				price: '13.96',
-				shipping: '.99.34 ',
-				save: '0.99',
+				listPrice: '65.95',
+				price: '59.96',
+				shipping: '119.34 ',
+				save: '8.99',
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'Accurate, elegant, easy-to-use digital kitchen scale for your largest and smallest cooking projects - weighs up to 11.24 lbs (5100 grams) with precise graduations of 0.05 oz (1 gram).',
-					'Automatic Unit Button instantly converts between 5 units of measurements (g, lbs, lbs:oz, oz, ml) and displays results on an easy-to-read LCD screen - e.g. easily convert 539 grams to 1.188 pounds to 1 pound 3 ounces to 19.01 ounces to 539 ml.',
-					'Precision Tare Button calculates the net weight of your ingredients by automatically subtracting the weight of any bowl or container.',
-					'Features a newly enlarged weighing platform finished in elegant chrome, and 2 large buttons that generate an audible click confirmation. Cleans and stores easily.',
+				description: [
+					'The feel, shape, and sensitivity of the dual analog sticks and trigger buttons have been improved to provide a greater sense of control, no matter what you play',
+					'The new multi touch and clickable touch pad on the face of the DualShock 4 Wireless Controller opens up worlds of new gameplay possibilities for both newcomers and veteran gamers',
+					"The DualShock 4 Wireless Controller features a built in speaker and stereo headset jack, putting several new audio options in the player's hands",
+					'The Dualshock 4 wireless controller can be easily recharged by plugging it into your PlayStation 4 system, even when in rest mode, or with any standard charger using a USB cable (type A to micro B sold separately)',
 				],
 				link: '009',
-				images: [TVG_IMG_9_1],
+				images: [TVG_IMG_9_1, TVG_IMG_9_2, TVG_IMG_9_3],
 			},
 			{
 				id: '010',
-				name: "S'well Cap - 9 Fl Oz - Stainless Steel",
-				rating: '721',
+				name: 'Star Trek: The Original Series - Star Fleet Flight Bag',
+				rating: '132',
 				stars: '4',
 				listPrice: null,
 				price: '9.99',
@@ -533,14 +542,9 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
-					'Designed with your active lifestyle in mind.',
-					"STAINLESS STEEL SWING CAP: Our S'well Stainless Steel Swing Cap is designed with a hinged handle for comfortable, two-fingered carrying. Hand-wash only.",
-					"THE PERFECT FIT: Ideal for an on-the-go lifestyle, Swing Cap’s L-shaped, grab-and-go handle is ergonomically shaped for comfortable two-fingered carrying. Fits S'well bottles 9oz and 17oz sizes.",
-					"ENJOY TILL THE LAST SIP: Toss your S'well bottle with our leak-free cap in your work or gym bag or clip onto backpacks or bags for hands-free portability without worrying about spills or drips.",
-				],
+				description: ['Officially Licensed', 'Durable PVC', 'Front zip pocket features tonal geometric applique', 'Starfleet and Delta screen-printing', 'Custom blue Star Trek lining'],
 				link: '010',
-				images: [TVG_IMG_10_1],
+				images: [TVG_IMG_10_1, TVG_IMG_10_2, TVG_IMG_10_3],
 			},
 		],
 	},
@@ -561,7 +565,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'MORE THAN WAFFLES: Make paninis, hash browns, and even biscuit pizzas! Any wet batter will “waffle” your treats and snacks into single serving portions. Great for kids or on the go',
 					'COMPACT + LIGHTWEIGHT: Weighing 1lb+, this is a MUST-HAVE for that first apartment, smaller kitchen, college dorm life, or camper/RV traveling',
 					'QUICK + EASY: Simply plug it in and go; it heats up in mere minutes. The dual non-stick surfaces provide an even cook for consistent results, each and every time. 4 inch cooking surfaces for individual portions',
@@ -584,7 +588,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'THERMOS vacuum insulation technology for maximum temperature retention, hot or cold',
 					'Durable stainless steel interior and exterior',
 					'Wide mouth is easy to fill, serve from and clean',
@@ -606,7 +610,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Easy Blending Cycles: one-touch buttons, six pre-programmed cycles, pulse, and ten speed manual control with the ability to achieve a variety of textures. Complete control to adjust your blending at any time',
 					'Patented Blade/80% Thicker: Stainless-Steel forged blade, with wings, for amazingly smooth blends (10x stronger than other blender blades). Note: blade is not sharp, blade is dull. No more cuts or pokes',
 					'Self-Cleaning: add a little soap and water, your jar can clean itself in less than one minute. Illuminated LCD timer displays remaining time on blends',
@@ -628,7 +632,7 @@ const all_products = [
 				color: ['blue', 'green', 'yellow'],
 				save: '$3.67 (18%)',
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Long Lasting: The Longlast Filter lasts 6 months. That’s 3x longer compared to PUR Lead Reduction 30 gallon filter life and Zerowater 15 gallon filter life',
 					"Reduces lead: Longlast filters are certified by WQA to reduce 99% of lead, chlorine (taste and odor), cadmium, mercury, benzene, asbestos and more found in tap water for cleaner, great tasting water. Contaminants reduced may not be in all users' water",
 					'BPA free and easy installation: The Longlast Filter is BPA free and compatible with all Brita Pitchers except Stream and Infinity. Filter has a pull top cap which makes it quick and easy to change and there is no presoak or rinse required',
@@ -650,7 +654,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Taps into the booming craft cocktail and home mixologist trend',
 					'Stainless steel, wooden, and glass components instantly turn your home bar into a high-quality center of attention with a comprehensive 9-piece cocktail set including recipes',
 					'Includes 1, 2-ounce shot glass; 1, 20-ounce mixing glass; 1 metal strainer; 1 wooden muddler; 1 metal stir spoon; 1 metal shaker base; and 1, 3-piece metal shaker',
@@ -672,7 +676,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'The Zero Gravity wall mounted magnetic spice rack features unique space-saving design to keep spices close at Hand but out of the way',
 					'The spice Canisters are easy to use, allowing for one handed operation and each spice canister has 3 settings: closed, sprinkle, and pour',
 					'They are airtight to preserve freshness with a clear viewing window for easy spice identification',
@@ -693,7 +697,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Best selling model: America’s most loved multi cooker, built with the latest 3rd generation technology, the microprocessor monitors pressure, temperature, keeps time, and adjusts heating intensity and duration to achieve desired results every time',
 					'Cooks fast and saves time: The Instant Pot Duo multi-cooker combines 7 appliances in one: Pressure cooker, slow cooker, rice cooker, steamer, saute pan, yogurt maker and warmer – and cooks up to 70% faster',
 					'Consistently delicious: 14 one-touch smart programs put cooking ribs, soups, beans, rice, poultry, yogurt, desserts and more on autopilot – with tasty results',
@@ -714,7 +718,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Quick and easy: This sandwich maker cooks your breakfast, lunch, or dinner sandwich in just minutes. Perfect for brunch or a quick, healthy meal on the go.',
 					'Create custom sandwiches: Use this breakfast maker to completely customize your sandwich with your choice of bread, cheese, eggs, meats, and much more. Eliminate the bread and these are great for Keto and paleo diets too.',
 					'Get inspired: Explore more than 25 sandwich maker recipes on our website.',
@@ -736,7 +740,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Accurate, elegant, easy-to-use digital kitchen scale for your largest and smallest cooking projects - weighs up to 11.24 lbs (5100 grams) with precise graduations of 0.05 oz (1 gram).',
 					'Automatic Unit Button instantly converts between 5 units of measurements (g, lbs, lbs:oz, oz, ml) and displays results on an easy-to-read LCD screen - e.g. easily convert 539 grams to 1.188 pounds to 1 pound 3 ounces to 19.01 ounces to 539 ml.',
 					'Precision Tare Button calculates the net weight of your ingredients by automatically subtracting the weight of any bowl or container.',
@@ -757,7 +761,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Designed with your active lifestyle in mind.',
 					"STAINLESS STEEL SWING CAP: Our S'well Stainless Steel Swing Cap is designed with a hinged handle for comfortable, two-fingered carrying. Hand-wash only.",
 					"THE PERFECT FIT: Ideal for an on-the-go lifestyle, Swing Cap’s L-shaped, grab-and-go handle is ergonomically shaped for comfortable two-fingered carrying. Fits S'well bottles 9oz and 17oz sizes.",
@@ -769,7 +773,7 @@ const all_products = [
 		],
 	},
 	{
-		heading: 'Stuffed Animals & Toys under $10',
+		heading: 'Stuffed Animals & Toys Under $10',
 		link: 'animal-toys',
 		linkText: 'Shop now',
 		products: [
@@ -785,7 +789,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'MORE THAN WAFFLES: Make paninis, hash browns, and even biscuit pizzas! Any wet batter will “waffle” your treats and snacks into single serving portions. Great for kids or on the go',
 					'COMPACT + LIGHTWEIGHT: Weighing 1lb+, this is a MUST-HAVE for that first apartment, smaller kitchen, college dorm life, or camper/RV traveling',
 					'QUICK + EASY: Simply plug it in and go; it heats up in mere minutes. The dual non-stick surfaces provide an even cook for consistent results, each and every time. 4 inch cooking surfaces for individual portions',
@@ -808,7 +812,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'THERMOS vacuum insulation technology for maximum temperature retention, hot or cold',
 					'Durable stainless steel interior and exterior',
 					'Wide mouth is easy to fill, serve from and clean',
@@ -830,7 +834,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Easy Blending Cycles: one-touch buttons, six pre-programmed cycles, pulse, and ten speed manual control with the ability to achieve a variety of textures. Complete control to adjust your blending at any time',
 					'Patented Blade/80% Thicker: Stainless-Steel forged blade, with wings, for amazingly smooth blends (10x stronger than other blender blades). Note: blade is not sharp, blade is dull. No more cuts or pokes',
 					'Self-Cleaning: add a little soap and water, your jar can clean itself in less than one minute. Illuminated LCD timer displays remaining time on blends',
@@ -852,7 +856,7 @@ const all_products = [
 				color: ['blue', 'green', 'yellow'],
 				save: '$3.67 (18%)',
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Long Lasting: The Longlast Filter lasts 6 months. That’s 3x longer compared to PUR Lead Reduction 30 gallon filter life and Zerowater 15 gallon filter life',
 					"Reduces lead: Longlast filters are certified by WQA to reduce 99% of lead, chlorine (taste and odor), cadmium, mercury, benzene, asbestos and more found in tap water for cleaner, great tasting water. Contaminants reduced may not be in all users' water",
 					'BPA free and easy installation: The Longlast Filter is BPA free and compatible with all Brita Pitchers except Stream and Infinity. Filter has a pull top cap which makes it quick and easy to change and there is no presoak or rinse required',
@@ -874,7 +878,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Taps into the booming craft cocktail and home mixologist trend',
 					'Stainless steel, wooden, and glass components instantly turn your home bar into a high-quality center of attention with a comprehensive 9-piece cocktail set including recipes',
 					'Includes 1, 2-ounce shot glass; 1, 20-ounce mixing glass; 1 metal strainer; 1 wooden muddler; 1 metal stir spoon; 1 metal shaker base; and 1, 3-piece metal shaker',
@@ -896,7 +900,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'The Zero Gravity wall mounted magnetic spice rack features unique space-saving design to keep spices close at Hand but out of the way',
 					'The spice Canisters are easy to use, allowing for one handed operation and each spice canister has 3 settings: closed, sprinkle, and pour',
 					'They are airtight to preserve freshness with a clear viewing window for easy spice identification',
@@ -917,7 +921,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Best selling model: America’s most loved multi cooker, built with the latest 3rd generation technology, the microprocessor monitors pressure, temperature, keeps time, and adjusts heating intensity and duration to achieve desired results every time',
 					'Cooks fast and saves time: The Instant Pot Duo multi-cooker combines 7 appliances in one: Pressure cooker, slow cooker, rice cooker, steamer, saute pan, yogurt maker and warmer – and cooks up to 70% faster',
 					'Consistently delicious: 14 one-touch smart programs put cooking ribs, soups, beans, rice, poultry, yogurt, desserts and more on autopilot – with tasty results',
@@ -938,7 +942,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Quick and easy: This sandwich maker cooks your breakfast, lunch, or dinner sandwich in just minutes. Perfect for brunch or a quick, healthy meal on the go.',
 					'Create custom sandwiches: Use this breakfast maker to completely customize your sandwich with your choice of bread, cheese, eggs, meAAT, and much more. Eliminate the bread and these are great for Keto and paleo diets too.',
 					'Get inspired: Explore more than 25 sandwich maker recipes on our website.',
@@ -960,7 +964,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Accurate, elegant, easy-to-use digital kitchen scale for your largest and smallest cooking projects - weighs up to 11.24 lbs (5100 grams) with precise graduations of 0.05 oz (1 gram).',
 					'Automatic Unit Button instantly converts between 5 units of measurements (g, lbs, lbs:oz, oz, ml) and displays results on an easy-to-read LCD screen - e.g. easily convert 539 grams to 1.188 pounds to 1 pound 3 ounces to 19.01 ounces to 539 ml.',
 					'Precision Tare Button calculates the net weight of your ingredients by automatically subtracting the weight of any bowl or container.',
@@ -981,7 +985,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Designed with your active lifestyle in mind.',
 					"STAINLESS STEEL SWING CAP: Our S'well Stainless Steel Swing Cap is designed with a hinged handle for comfortable, two-fingered carrying. Hand-wash only.",
 					"THE PERFECT FIT: Ideal for an on-the-go lifestyle, Swing Cap’s L-shaped, grab-and-go handle is ergonomically shaped for comfortable two-fingered carrying. Fits S'well bottles 9oz and 17oz sizes.",
@@ -1009,7 +1013,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'MORE THAN WAFFLES: Make paninis, hash browns, and even biscuit pizzas! Any wet batter will “waffle” your treats and snacks into single serving portions. Great for kids or on the go',
 					'COMPACT + LIGHTWEIGHT: Weighing 1lb+, this is a MUST-HAVE for that first apartment, smaller kitchen, college dorm life, or camper/RV traveling',
 					'QUICK + EASY: Simply plug it in and go; it heats up in mere minutes. The dual non-stick surfaces provide an even cook for consistent results, each and every time. 4 inch cooking surfaces for individual portions',
@@ -1032,7 +1036,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'THERMOS vacuum insulation technology for maximum temperature retention, hot or cold',
 					'Durable stainless steel interior and exterior',
 					'Wide mouth is easy to fill, serve from and clean',
@@ -1054,7 +1058,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Easy Blending Cycles: one-touch buttons, six pre-programmed cycles, pulse, and ten speed manual control with the ability to achieve a variety of textures. Complete control to adjust your blending at any time',
 					'Patented Blade/80% Thicker: Stainless-Steel forged blade, with wings, for amazingly smooth blends (10x stronger than other blender blades). Note: blade is not sharp, blade is dull. No more cuts or pokes',
 					'Self-Cleaning: add a little soap and water, your jar can clean itself in less than one minute. Illuminated LCD timer displays remaining time on blends',
@@ -1076,7 +1080,7 @@ const all_products = [
 				color: ['blue', 'green', 'yellow'],
 				save: '$3.67 (18%)',
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Long Lasting: The Longlast Filter lasts 6 months. That’s 3x longer compared to PUR Lead Reduction 30 gallon filter life and Zerowater 15 gallon filter life',
 					"Reduces lead: Longlast filters are certified by WQA to reduce 99% of lead, chlorine (taste and odor), cadmium, mercury, benzene, asbestos and more found in tap water for cleaner, great tasting water. Contaminants reduced may not be in all users' water",
 					'BPA free and easy installation: The Longlast Filter is BPA free and compatible with all Brita Pitchers except Stream and Infinity. Filter has a pull top cap which makes it quick and easy to change and there is no presoak or rinse required',
@@ -1098,7 +1102,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Taps into the booming craft cocktail and home mixologist trend',
 					'Stainless steel, wooden, and glass components instantly turn your home bar into a high-quality center of attention with a comprehensive 9-piece cocktail set including recipes',
 					'Includes 1, 2-ounce shot glass; 1, 20-ounce mixing glass; 1 metal strainer; 1 wooden muddler; 1 metal stir spoon; 1 metal shaker base; and 1, 3-piece metal shaker',
@@ -1120,7 +1124,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'The Zero Gravity wall mounted magnetic spice rack features unique space-saving design to keep spices close at Hand but out of the way',
 					'The spice Canisters are easy to use, allowing for one handed operation and each spice canister has 3 settings: closed, sprinkle, and pour',
 					'They are airtight to preserve freshness with a clear viewing window for easy spice identification',
@@ -1141,7 +1145,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Best selling model: America’s most loved multi cooker, built with the latest 3rd generation technology, the microprocessor monitors pressure, temperature, keeps time, and adjusts heating intensity and duration to achieve desired results every time',
 					'Cooks fast and saves time: The Instant Pot Duo multi-cooker combines 7 appliances in one: Pressure cooker, slow cooker, rice cooker, steamer, saute pan, yogurt maker and warmer – and cooks up to 70% faster',
 					'Consistently delicious: 14 one-touch smart programs put cooking ribs, soups, beans, rice, poultry, yogurt, desserts and more on autopilot – with tasty results',
@@ -1162,7 +1166,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Quick and easy: This sandwich maker cooks your breakfast, lunch, or dinner sandwich in just minutes. Perfect for brunch or a quick, healthy meal on the go.',
 					'Create custom sandwiches: Use this breakfast maker to completely customize your sandwich with your choice of bread, cheese, eggs, meAAT, and much more. Eliminate the bread and these are great for Keto and paleo diets too.',
 					'Get inspired: Explore more than 25 sandwich maker recipes on our website.',
@@ -1184,7 +1188,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Accurate, elegant, easy-to-use digital kitchen scale for your largest and smallest cooking projects - weighs up to 11.24 lbs (5100 grams) with precise graduations of 0.05 oz (1 gram).',
 					'Automatic Unit Button instantly converts between 5 units of measurements (g, lbs, lbs:oz, oz, ml) and displays results on an easy-to-read LCD screen - e.g. easily convert 539 grams to 1.188 pounds to 1 pound 3 ounces to 19.01 ounces to 539 ml.',
 					'Precision Tare Button calculates the net weight of your ingredients by automatically subtracting the weight of any bowl or container.',
@@ -1205,7 +1209,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Designed with your active lifestyle in mind.',
 					"STAINLESS STEEL SWING CAP: Our S'well Stainless Steel Swing Cap is designed with a hinged handle for comfortable, two-fingered carrying. Hand-wash only.",
 					"THE PERFECT FIT: Ideal for an on-the-go lifestyle, Swing Cap’s L-shaped, grab-and-go handle is ergonomically shaped for comfortable two-fingered carrying. Fits S'well bottles 9oz and 17oz sizes.",
@@ -1216,9 +1220,8 @@ const all_products = [
 			},
 		],
 	},
-
 	{
-		heading: 'Must have Wireless products',
+		heading: 'Must Have Wireless Products',
 		link: 'wireless-products',
 		linkText: 'Shop now',
 		products: [
@@ -1234,7 +1237,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'MORE THAN WAFFLES: Make paninis, hash browns, and even biscuit pizzas! Any wet batter will “waffle” your treats and snacks into single serving portions. Great for kids or on the go',
 					'COMPACT + LIGHTWEIGHT: Weighing 1lb+, this is a MUST-HAVE for that first apartment, smaller kitchen, college dorm life, or camper/RV traveling',
 					'QUICK + EASY: Simply plug it in and go; it heats up in mere minutes. The dual non-stick surfaces provide an even cook for consistent results, each and every time. 4 inch cooking surfaces for individual portions',
@@ -1257,7 +1260,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'THERMOS vacuum insulation technology for maximum temperature retention, hot or cold',
 					'Durable stainless steel interior and exterior',
 					'Wide mouth is easy to fill, serve from and clean',
@@ -1279,7 +1282,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Easy Blending Cycles: one-touch buttons, six pre-programmed cycles, pulse, and ten speed manual control with the ability to achieve a variety of textures. Complete control to adjust your blending at any time',
 					'Patented Blade/80% Thicker: Stainless-Steel forged blade, with wings, for amazingly smooth blends (10x stronger than other blender blades). Note: blade is not sharp, blade is dull. No more cuts or pokes',
 					'Self-Cleaning: add a little soap and water, your jar can clean itself in less than one minute. Illuminated LCD timer displays remaining time on blends',
@@ -1301,7 +1304,7 @@ const all_products = [
 				color: ['blue', 'green', 'yellow'],
 				save: '$3.67 (18%)',
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Long Lasting: The Longlast Filter lasts 6 months. That’s 3x longer compared to PUR Lead Reduction 30 gallon filter life and Zerowater 15 gallon filter life',
 					"Reduces lead: Longlast filters are certified by WQA to reduce 99% of lead, chlorine (taste and odor), cadmium, mercury, benzene, asbestos and more found in tap water for cleaner, great tasting water. Contaminants reduced may not be in all users' water",
 					'BPA free and easy installation: The Longlast Filter is BPA free and compatible with all Brita Pitchers except Stream and Infinity. Filter has a pull top cap which makes it quick and easy to change and there is no presoak or rinse required',
@@ -1323,7 +1326,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Taps into the booming craft cocktail and home mixologist trend',
 					'Stainless steel, wooden, and glass components instantly turn your home bar into a high-quality center of attention with a comprehensive 9-piece cocktail set including recipes',
 					'Includes 1, 2-ounce shot glass; 1, 20-ounce mixing glass; 1 metal strainer; 1 wooden muddler; 1 metal stir spoon; 1 metal shaker base; and 1, 3-piece metal shaker',
@@ -1345,7 +1348,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'The Zero Gravity wall mounted magnetic spice rack features unique space-saving design to keep spices close at Hand but out of the way',
 					'The spice Canisters are easy to use, allowing for one handed operation and each spice canister has 3 settings: closed, sprinkle, and pour',
 					'They are airtight to preserve freshness with a clear viewing window for easy spice identification',
@@ -1366,7 +1369,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Best selling model: America’s most loved multi cooker, built with the latest 3rd generation technology, the microprocessor monitors pressure, temperature, keeps time, and adjusts heating intensity and duration to achieve desired results every time',
 					'Cooks fast and saves time: The Instant Pot Duo multi-cooker combines 7 appliances in one: Pressure cooker, slow cooker, rice cooker, steamer, saute pan, yogurt maker and warmer – and cooks up to 70% faster',
 					'Consistently delicious: 14 one-touch smart programs put cooking ribs, soups, beans, rice, poultry, yogurt, desserts and more on autopilot – with tasty results',
@@ -1387,7 +1390,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Quick and easy: This sandwich maker cooks your breakfast, lunch, or dinner sandwich in just minutes. Perfect for brunch or a quick, healthy meal on the go.',
 					'Create custom sandwiches: Use this breakfast maker to completely customize your sandwich with your choice of bread, cheese, eggs, meAAT, and much more. Eliminate the bread and these are great for Keto and paleo diets too.',
 					'Get inspired: Explore more than 25 sandwich maker recipes on our website.',
@@ -1409,7 +1412,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Accurate, elegant, easy-to-use digital kitchen scale for your largest and smallest cooking projects - weighs up to 11.24 lbs (5100 grams) with precise graduations of 0.05 oz (1 gram).',
 					'Automatic Unit Button instantly converts between 5 units of measurements (g, lbs, lbs:oz, oz, ml) and displays results on an easy-to-read LCD screen - e.g. easily convert 539 grams to 1.188 pounds to 1 pound 3 ounces to 19.01 ounces to 539 ml.',
 					'Precision Tare Button calculates the net weight of your ingredients by automatically subtracting the weight of any bowl or container.',
@@ -1430,7 +1433,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Designed with your active lifestyle in mind.',
 					"STAINLESS STEEL SWING CAP: Our S'well Stainless Steel Swing Cap is designed with a hinged handle for comfortable, two-fingered carrying. Hand-wash only.",
 					"THE PERFECT FIT: Ideal for an on-the-go lifestyle, Swing Cap’s L-shaped, grab-and-go handle is ergonomically shaped for comfortable two-fingered carrying. Fits S'well bottles 9oz and 17oz sizes.",
@@ -1441,9 +1444,8 @@ const all_products = [
 			},
 		],
 	},
-
 	{
-		heading: 'Top Beauty & Personal Care products',
+		heading: 'Top Beauty & Personal Care Products',
 		link: 'beauty-care',
 		linkText: 'Shop now',
 		products: [
@@ -1459,7 +1461,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'MORE THAN WAFFLES: Make paninis, hash browns, and even biscuit pizzas! Any wet batter will “waffle” your treats and snacks into single serving portions. Great for kids or on the go',
 					'COMPACT + LIGHTWEIGHT: Weighing 1lb+, this is a MUST-HAVE for that first apartment, smaller kitchen, college dorm life, or camper/RV traveling',
 					'QUICK + EASY: Simply plug it in and go; it heats up in mere minutes. The dual non-stick surfaces provide an even cook for consistent results, each and every time. 4 inch cooking surfaces for individual portions',
@@ -1482,7 +1484,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'THERMOS vacuum insulation technology for maximum temperature retention, hot or cold',
 					'Durable stainless steel interior and exterior',
 					'Wide mouth is easy to fill, serve from and clean',
@@ -1504,7 +1506,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Easy Blending Cycles: one-touch buttons, six pre-programmed cycles, pulse, and ten speed manual control with the ability to achieve a variety of textures. Complete control to adjust your blending at any time',
 					'Patented Blade/80% Thicker: Stainless-Steel forged blade, with wings, for amazingly smooth blends (10x stronger than other blender blades). Note: blade is not sharp, blade is dull. No more cuts or pokes',
 					'Self-Cleaning: add a little soap and water, your jar can clean itself in less than one minute. Illuminated LCD timer displays remaining time on blends',
@@ -1526,7 +1528,7 @@ const all_products = [
 				color: ['blue', 'green', 'yellow'],
 				save: '$3.67 (18%)',
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Long Lasting: The Longlast Filter lasts 6 months. That’s 3x longer compared to PUR Lead Reduction 30 gallon filter life and Zerowater 15 gallon filter life',
 					"Reduces lead: Longlast filters are certified by WQA to reduce 99% of lead, chlorine (taste and odor), cadmium, mercury, benzene, asbestos and more found in tap water for cleaner, great tasting water. Contaminants reduced may not be in all users' water",
 					'BPA free and easy installation: The Longlast Filter is BPA free and compatible with all Brita Pitchers except Stream and Infinity. Filter has a pull top cap which makes it quick and easy to change and there is no presoak or rinse required',
@@ -1548,7 +1550,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['blue', 'green', 'yellow'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Taps into the booming craft cocktail and home mixologist trend',
 					'Stainless steel, wooden, and glass components instantly turn your home bar into a high-quality center of attention with a comprehensive 9-piece cocktail set including recipes',
 					'Includes 1, 2-ounce shot glass; 1, 20-ounce mixing glass; 1 metal strainer; 1 wooden muddler; 1 metal stir spoon; 1 metal shaker base; and 1, 3-piece metal shaker',
@@ -1570,7 +1572,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'The Zero Gravity wall mounted magnetic spice rack features unique space-saving design to keep spices close at Hand but out of the way',
 					'The spice Canisters are easy to use, allowing for one handed operation and each spice canister has 3 settings: closed, sprinkle, and pour',
 					'They are airtight to preserve freshness with a clear viewing window for easy spice identification',
@@ -1591,7 +1593,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Best selling model: America’s most loved multi cooker, built with the latest 3rd generation technology, the microprocessor monitors pressure, temperature, keeps time, and adjusts heating intensity and duration to achieve desired results every time',
 					'Cooks fast and saves time: The Instant Pot Duo multi-cooker combines 7 appliances in one: Pressure cooker, slow cooker, rice cooker, steamer, saute pan, yogurt maker and warmer – and cooks up to 70% faster',
 					'Consistently delicious: 14 one-touch smart programs put cooking ribs, soups, beans, rice, poultry, yogurt, desserts and more on autopilot – with tasty results',
@@ -1612,7 +1614,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['red', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Quick and easy: This sandwich maker cooks your breakfast, lunch, or dinner sandwich in just minutes. Perfect for brunch or a quick, healthy meal on the go.',
 					'Create custom sandwiches: Use this breakfast maker to completely customize your sandwich with your choice of bread, cheese, eggs, meAAT, and much more. Eliminate the bread and these are great for Keto and paleo diets too.',
 					'Get inspired: Explore more than 25 sandwich maker recipes on our website.',
@@ -1634,7 +1636,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Accurate, elegant, easy-to-use digital kitchen scale for your largest and smallest cooking projects - weighs up to 11.24 lbs (5100 grams) with precise graduations of 0.05 oz (1 gram).',
 					'Automatic Unit Button instantly converts between 5 units of measurements (g, lbs, lbs:oz, oz, ml) and displays results on an easy-to-read LCD screen - e.g. easily convert 539 grams to 1.188 pounds to 1 pound 3 ounces to 19.01 ounces to 539 ml.',
 					'Precision Tare Button calculates the net weight of your ingredients by automatically subtracting the weight of any bowl or container.',
@@ -1655,7 +1657,7 @@ const all_products = [
 				size: ['XS', 'SM', 'LG'],
 				color: ['black', 'silver'],
 				arrives: 'Sep 16 - Oct 2',
-				descripttion: [
+				description: [
 					'Designed with your active lifestyle in mind.',
 					"STAINLESS STEEL SWING CAP: Our S'well Stainless Steel Swing Cap is designed with a hinged handle for comfortable, two-fingered carrying. Hand-wash only.",
 					"THE PERFECT FIT: Ideal for an on-the-go lifestyle, Swing Cap’s L-shaped, grab-and-go handle is ergonomically shaped for comfortable two-fingered carrying. Fits S'well bottles 9oz and 17oz sizes.",

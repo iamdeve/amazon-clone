@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './FooterTop.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 const footer_links_1 = [
 	{ link: 'careers', text: 'Careers' },
 	{ link: 'blog', text: 'Blog' },
@@ -118,7 +118,7 @@ function FooterTop() {
 					<div className={classes.footer__country}>
 						<button className={[classes.btn__footer].join(' ')}>
 							<span></span>
-							<span>United States</span>
+							<span>Pakistan</span>
 						</button>
 					</div>
 				</div>
