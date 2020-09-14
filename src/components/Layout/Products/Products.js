@@ -2,11 +2,45 @@ import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import classes from './Products.module.css';
 import ReactImageMagnify from 'react-image-magnify';
+import Chip from '@material-ui/core/Chip';
+import { Link } from 'react-router-dom';
+import $ from 'jquery';
 function Products({ product }) {
 	// console.log(product.images)
+	const [colorBorder, setColorBorder] = useState(1);
+	const [qty, setQty] = useState(1);
 	const [mainImgUrl, setMainImgUrl] = useState(product.images[0]);
 	const changeMainImgHandler = (imgUrl) => {
 		setMainImgUrl(imgUrl);
+	};
+	const addQtyHandler = () => {
+		setQty(qty + 1);
+	};
+	const deleteQtyHandler = () => {
+		setQty(qty - 1);
+	};
+	const selectColorHandler = (id) => {
+		[0, 1, 2].forEach((i) => {
+			let prevChip = $(`#chip__color__${i}`)[0];
+			prevChip.style.setProperty('border', 'none', '!important');
+			prevChip.style.boxShadow = 'none';
+		});
+		let chip = $(`#chip__color__${id}`)[0];
+		console.log(chip);
+		chip.style.setProperty('border', '2px solid orange', '!important');
+		chip.style.boxShadow = '0 0 0 2px orange';
+	};
+
+	const selectSizeHandler = (id) => {
+		[0, 1, 2].forEach((i) => {
+			let prevChip = $(`#chip__size__${i}`)[0];
+			prevChip.style.setProperty('border', 'none', '!important');
+			prevChip.style.boxShadow = 'none';
+		});
+		let chip = $(`#chip__size__${id}`)[0];
+		console.log(chip);
+		chip.style.setProperty('border', '2px solid orange', '!important');
+		chip.style.boxShadow = '0 0 0 2px orange';
 	};
 	return (
 		<div className={classes.single__products}>
@@ -68,10 +102,10 @@ function Products({ product }) {
 							<div className={classes.list__price}>
 								<Row>
 									<Col xs='2'>
-										<span>List Price</span>
+										<span className={classes.span__auto}>List Price</span>
 									</Col>
-									<Col xs='2'>
-										<span>{product.listPrice}</span>
+									<Col xs='10'>
+										<span>$ {product.listPrice}</span>
 									</Col>
 								</Row>
 							</div>
@@ -81,10 +115,60 @@ function Products({ product }) {
 						<div className={classes.Price}>
 							<Row>
 								<Col xs='2'>
-									<span>Price</span>
+									<span className={classes.span__auto}>Price</span>
 								</Col>
+								<Col xs='10'>
+									<span className={classes.product__price}>$ {product.price}</span>{' '}
+									{product.shipping ? (
+										<span className={classes.shipping__price}>
+											$ <span>{product.shipping}</span> Shipping &amp; Import Fees Deposit to Pakistan Details
+										</span>
+									) : (
+										''
+									)}
+								</Col>
+							</Row>
+						</div>
+
+						{product.save ? (
+							<div className={classes.save__price}>
+								<Row>
+									<Col xs='2'>
+										<span className={classes.span__auto}>Save</span>
+									</Col>
+									<Col xs='10'>
+										<span>{product.save}</span>
+									</Col>
+								</Row>
+							</div>
+						) : (
+							''
+						)}
+						<div className={classes.sizes}>
+							<Row>
 								<Col xs='2'>
-									<span>{product.price}</span>
+									<span className={classes.span__auto}>Sizes</span>
+								</Col>
+								<Col xs='10'>
+									{product.size.map((size, id) => (
+										<span key={id} className={classes.size}>
+											<Chip id={`chip__size__${id}`} className={classes.chip__border} onClick={() => selectSizeHandler(id)} clickable={true} label={size} style={{ color: '#777' }} />
+										</span>
+									))}
+								</Col>
+							</Row>
+						</div>
+						<div className={classes.colors}>
+							<Row>
+								<Col xs='2'>
+									<span className={classes.span__auto}>Color</span>
+								</Col>
+								<Col xs='10'>
+									{product.color.map((col, id) => (
+										<span key={id} className={classes.col}>
+											<Chip id={`chip__color__${id}`} className={classes.chip__border} onClick={() => selectColorHandler(id)} clickable={true} label={col.charAt(0).toUpperCase() + col.slice(1)} style={{ color: '#777' }} />
+										</span>
+									))}
 								</Col>
 							</Row>
 						</div>
@@ -96,7 +180,57 @@ function Products({ product }) {
 							</ul>
 						</div>
 					</Col>
-					<Col xs='3'>asdf</Col>
+					<Col xs='3'>
+						<div className={classes.check__out__wrapper}>
+							<div className={classes.share_item}>
+								<span>
+									<Link to='/'>Share</Link>
+								</span>
+								<span className={[classes.social_icon, classes.email].join(' ')}></span>
+								<span className={[classes.social_icon, classes.facebook].join(' ')}></span>
+								<span className={[classes.social_icon, classes.twitter].join(' ')}></span>
+								<span className={[classes.social_icon, classes.pinterest].join(' ')}></span>
+							</div>
+
+							<div className={classes.check__out}>
+								<div className={classes.item__price}>
+									<span>Item Price</span>
+									<span>${product.price}</span>
+								</div>
+								<div className={classes.item__shipping}>
+									<span>Shipping Price</span>
+									<pan> + ${product.shipping}</pan>
+								</div>
+								<div className={classes.total__price}>
+									<span>Total</span>
+									<pan> $111</pan>
+								</div>
+								<div className={classes.qty}>
+									<span>Qty</span>
+									<span>{qty}</span>
+									<div className={classes.qty__handlers}>
+										<button onClick={deleteQtyHandler}>-</button>
+										<button onClick={addQtyHandler}>+</button>
+									</div>
+								</div>
+								<div className={classes.btn__add__to__card}>
+									<button>
+										<span className={classes.add__to__cart_icon}></span>
+										<span>Add to Cart</span>
+									</button>
+								</div>
+								<div className={classes.btn__checout}>
+									<button>
+										<span className={classes.check__icon}></span>
+										<span>Check Out</span>
+									</button>
+								</div>
+								<div className={classes.deliver__add}>
+									<span></span> <Link>Deliver to Pakistan</Link>
+								</div>
+							</div>
+						</div>
+					</Col>
 				</Row>
 			</div>
 		</div>

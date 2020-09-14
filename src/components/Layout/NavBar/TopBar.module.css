@@ -213,11 +213,16 @@
 }
 .cart__number {
 	position: absolute;
-	top: 0.2rem;
-	left: 1.5rem;
-	color: var(--secondary-color);
-	font-size: 0.8rem;
-	font-weight: bold;
+    width: 25px;
+    display: flex;
+    top: 0.2rem;
+    left: 1.2rem;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .arrow__up {
 	width: 0;

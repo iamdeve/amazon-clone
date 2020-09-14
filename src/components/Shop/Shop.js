@@ -39,20 +39,26 @@ function Shop() {
 				<Link color='inherit' href='/shop-now'>
 					All Product
 				</Link>
-				<Link color='inherit' href='/shop-now'>
-					{category
-						? category
-								.split('-')
-								.map((cat) => {
-									return cat.charAt(0).toUpperCase() + cat.slice(1);
-								})
-								.join(' ')
-						: ''}
-				</Link>
+				{category ? (
+					<Link color='inherit' href='/shop-now'>
+						{category
+							? category
+									.split('-')
+									.map((cat) => {
+										return cat.charAt(0).toUpperCase() + cat.slice(1);
+									})
+									.join(' ')
+							: ''}
+					</Link>
+				) : null}
 
-				<Typography color='textPrimary'>
-					{product && Object.keys(products).length > 0 ? `${products.products.filter((p) => p.id === product)[0].name.split(' ')[0]} ${products.products.filter((p) => p.id === product)[0].name.split(' ')[1]} ${products.products.filter((p) => p.id === product)[0].name.split(' ')[2]}` : ''}
-				</Typography>
+				{category ? (
+					<Typography color='textPrimary'>
+						{product && Object.keys(products).length > 0
+							? `${products.products.filter((p) => p.id === product)[0].name.split(' ')[0]} ${products.products.filter((p) => p.id === product)[0].name.split(' ')[1]} ${products.products.filter((p) => p.id === product)[0].name.split(' ')[2]}`
+							: ''}
+					</Typography>
+				) : null}
 			</Breadcrumbs>
 			{category === undefined ? (
 				data.map((category, id) => <CustomCarousel key={id} info={true} data={category.products} heading={category.heading} customLink={category.link} />)

@@ -6,9 +6,12 @@ import { Dropdown, DropdownButton, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import PK from '../../../assets/pk.jpg';
+import { useStateValue } from '../../../store/StateProvider'
 // const languages = ['English - EN', 'Español - ES', '简体中文 - ZH', 'Deutsch - DE', 'Português - PT', '繁體中文 - ZH', '한국어 - KO', 'עברית - HE'];
 function TopBar() {
 	const [focused, setFocused] = useState(false);
+
+	const [{cart}, dispatch] = useStateValue()
 	const inputFocusHandler = (e) => {
 		setFocused(true);
 	};
@@ -31,22 +34,22 @@ function TopBar() {
 				<div className={[classes.topbar__form__container, focused ? classes.Focus : ''].join(' ')}>
 					<div className={classes.form__categories}>
 						<DropdownButton className={classes.category__dropdown} title='All'>
-							<Dropdown.Item as={Link} to='/toys'>
+							<Dropdown.Item as={Link} to='/shop-now/stuffed-animals-&amp;-toys-under-$10'>
 								Animal Toys
 							</Dropdown.Item>
-							<Dropdown.Item as={Link} to='/beauty-care'>
+							<Dropdown.Item as={Link} to='/shop-now/top-beauty-&amp;-personal-care-products'>
 								Beauty &amp; Care
 							</Dropdown.Item>
-							<Dropdown.Item as={Link} to='/electronics'>
+							<Dropdown.Item as={Link} to='/shop-now/trending-in-video-games'>
 								Electronics
 							</Dropdown.Item>
-							<Dropdown.Item as={Link} to='/gifts'>
+							<Dropdown.Item as={Link} to='/shop-now/amazon-top-sellers'>
 								Gifts
 							</Dropdown.Item>
-							<Dropdown.Item as={Link} to='/home-decore'>
+							<Dropdown.Item as={Link} to='/shop-now/home-décor-under-$20'>
 								Home Decoure
 							</Dropdown.Item>
-							<Dropdown.Item as={Link} to='/kitchen'>
+							<Dropdown.Item as={Link} to='/shop-now/best-sellers-in-kitchen'>
 								Kitchen
 							</Dropdown.Item>
 						</DropdownButton>
@@ -109,7 +112,7 @@ function TopBar() {
 				</div>
 				<div className={classes.cart}>
 					<a href='/'>
-						<span className={classes.cart__number}>23</span>
+						<span className={classes.cart__number}>{cart.length}</span>
 						<span className={[classes.nav__sprite, classes.nav__cart].join(' ')}></span>
 						<span className={classes.nav__big__text}>&nbsp; Cart</span>
 					</a>

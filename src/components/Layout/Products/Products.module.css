@@ -1,4 +1,5 @@
-.single__products{
+@import url(../../../variables.css);
+.single__products {
 	padding: 2rem 0;
 	background-color: #fff;
 }
@@ -18,7 +19,7 @@
 	width: 100%;
 	height: 20rem !important;
 }
-.product__main__images > div:first-child{
+.product__main__images > div:first-child {
 	width: 100% !important;
 	height: 100% !important;
 	z-index: 99999999999;
@@ -26,8 +27,8 @@
 .img__wrap {
 	width: 3rem;
 	height: 3rem;
-    margin: 0.6rem 0.4rem;
-    border: 1px solid #777;
+	margin: 0.6rem 0.4rem;
+	border: 1px solid #777;
 }
 .img__wrap:hover {
 	border: 1px solid orange;
@@ -37,13 +38,146 @@
 	width: 100%;
 	height: 100%;
 }
-.divider{
+.divider {
 	border-bottom: 1px solid #ccc;
 	margin: 1rem 0;
 }
 .product_description {
 	margin: 1rem;
 }
-.product_description ul{
+.product_description ul {
 	padding: 0;
+}
+.product_description ul li {
+	font-size: 14px;
+}
+.list__price span:last-child() {
+	text-decoration: line-through;
+}
+.product__price {
+	color: orange;
+}
+.shipping__price {
+	color: #777;
+	font-size: 12px;
+}
+
+.list__price,
+.Price,
+.sizes,
+.colors {
+	margin: 0.3rem 0;
+}
+.Price span:nth-child(2),
+.sizes span:nth-child(2),
+.colors span:nth-child(2) {
+	margin: 0 0.3rem;
+}
+
+.span__auto {
+	font-size: 14px;
+	color: #9a9a9a;
+}
+.share_item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.social_icon {
+	background-image: url(../../../assets/social_icons.png);
+	background-position: 0px 1000px;
+	margin: 0 0.2rem;
+}
+.email {
+	display: inline-block;
+	width: 19px;
+	height: 17px;
+	background-position: -256px -221px;
+}
+.twitter {
+	display: inline-block;
+	width: 18px;
+	height: 17px;
+	background-position: -277px -220px;
+}
+.facebook {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background-position: -297px -220px;
+}
+.pinterest {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background-position: -373px -220px;
+}
+
+.check__out {
+	margin: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 1rem;
+}
+.check__out__wrapper div {
+	margin: 0.5rem 0;
+}
+
+.item__price,
+.item__shipping,
+.total__price,
+.qty {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn__add__to__card button,
+.btn__checout button {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0.2rem;
+	background-color: var(--signin-btn-bg);
+	border: 1px solid #000;
+	font-size: 14px;
+}
+.btn__add__to__card button span:first-child,
+.btn__checout button span:first-child {
+	display: inline-block;
+	background-image: url(../../../assets/cart-rating-sprite.png);
+	background-position: 0 1000px;
+}
+.btn__add__to__card button span:nth-child(2),
+.btn__checout button span:nth-child(2) {
+	flex: 1;
+}
+.btn__add__to__card button span:first-child {
+	background-position: -35px -5px;
+	width: 25px;
+	height: 25px;
+}
+.btn__checout button span:first-child {
+	background-position: -35px -60px;
+	width: 25px;
+	height: 25px;
+}
+.qty button {
+	border: none;
+	width: 25px;
+	margin: 0 0.2rem;
+}
+.deliver__add span {
+	background-image: url(../../../assets/DeliveryStaticPackard-pin_desktop_1x-c944b6819f9e5642fdfd4ff3d1109d60d66d8f87._V2_.png);
+	min-width: 16px;
+	height: 14px;
+	display: inline-block;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAABGdBTUEAALGPC/xhBQAAAORJREFUKM+F0r9Kw1AAhfGfIYhUp1IfoEu3Dh07C75EwcFJfKAOotjVQjft5tIl0FGo+gy6FBc1ILgcSqqIBw7kfve7f0LCdk5R4S2twn7lEHN8YILzdBI2j7PJHZ7Qz3gnFfYcB4zwmYkWxlin47B+nBEscJ3FF1jhOF2FibOQnc5Q4h3DxlWHYWWcNbziJEd/oddY0AtrxXmBW1xGuMcM++ksDK7iOkKd3bp4yLjOczdzdVxwk4+0l/sO0jKsirPJAZaYomjwImwZZysdPEbYTadhHX+knZdstu2fFI1/qfg5+Q29Xj1EKAvO+AAAAABJRU5ErkJggg==);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center;
+}
+.chip__border:focus {
+	/* border: 2px solid orange !important;
+	box-shadow: 0 0 3px orange; */
 }
