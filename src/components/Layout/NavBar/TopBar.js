@@ -111,11 +111,11 @@ function TopBar() {
 					</a>
 				</div>
 				<div className={classes.cart}>
-					<a href='/'>
+					<Link to='/cart'>
 						<span className={classes.cart__number}>{cart.length}</span>
 						<span className={[classes.nav__sprite, classes.nav__cart].join(' ')}></span>
 						<span className={classes.nav__big__text}>&nbsp; Cart</span>
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>

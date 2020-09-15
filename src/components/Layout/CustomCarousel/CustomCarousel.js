@@ -4,6 +4,9 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from 'react-router-dom';
 import UAParser from 'ua-parser-js';
+import { useStateValue } from '../../../store/StateProvider';
+import { actionTypes } from '../../../store/reducer';
+
 const responsive = {
 	superLargeDesktop: {
 		// the naming can be any, depends on you.
@@ -48,6 +51,13 @@ const responsive = {
 // 	);
 // };
 function CustomCarousel({ info, data, heading, customLink, deviceType }) {
+	const [{ cart }, dispatch] = useStateValue();
+	const addToCart = (item) => {
+		dispatch({
+			type: actionTypes.ADD_TO_CART,
+			item: item,
+		});
+	};
 	return (
 		<div className={classes.custom__carousel__container}>
 			<div className={classes.category__header}>
@@ -103,12 +113,16 @@ function CustomCarousel({ info, data, heading, customLink, deviceType }) {
 									<div className={classes.item__name}>{`${item.name.split(' ')[0]} ${item.name.split(' ')[1]} ${item.name.split(' ')[2]}`}</div>
 									<div className={classes.item__name}>${item.price}</div>
 									<div className={classes.item__add__to__cart}>
-										<button className={classes.btn__add_to__cart}>
-											<span></span> <span>Add to Cart</span>
+										<button disabled={cart.filter((i) => i.id === item.id).length > 0} onClick={() => addToCart(item)} className={classes.btn__add_to__cart}>
+											<span></span>{' '}
+											<span>
+												{cart.filter((i) => i.id === item.id).length > 0 ? 'Added To Card' : 'Add to Cart'}
+												{/* Add to Cart */}
+											</span>
 										</button>
 									</div>
 									<div className={classes.item__view__product}>
-										<Link to={`/shop-now/${heading.toLowerCase().split(' ').join('-')}/${item.id}`} title="View Product" className={classes.btn__view__product}>
+										<Link to={`/shop-now/${heading.toLowerCase().split(' ').join('-')}/${item.id}`} title='View Product' className={classes.btn__view__product}>
 											<span></span> <span></span>
 										</Link>
 									</div>

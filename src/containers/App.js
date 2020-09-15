@@ -6,6 +6,7 @@ import { TopBar, BottomBar, CustomToaster } from '../components/Layout/NavBar';
 import FooterTop from '../components/Layout/Footer/FooterTop';
 import FooterBottom from '../components/Layout/Footer/FooterBottom';
 import Shop from '../components/Shop/Shop';
+import Cart from '../components/Cart/Cart';
 function App() {
 	return (
 		<div className='app'>
@@ -17,6 +18,7 @@ function App() {
 				<Route path='/shop-now' exact component={Shop} />
 				<Route path='/shop-now/:category' exact component={Shop} />
 				<Route path='/shop-now/:category/:product' exact component={Shop} />
+				<Route path='/cart' exact component={Cart} />
 			</Switch>
 			<FooterTop />
 			<FooterBottom />

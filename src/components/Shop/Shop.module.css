@@ -2,6 +2,18 @@
 	padding: 1rem 1rem 1rem 1rem;
 }
 
-.products_lists_wrapper .BreadCrumbs a,.products_lists_wrapper .BreadCrumbs p{
+.products_lists_wrapper .BreadCrumbs a,
+.products_lists_wrapper .BreadCrumbs p {
 	font-size: 12px;
+}
+.product__filter {
+	background-color: #fff;
+	padding: 1rem;
+	margin: 1rem;
+}
+.price__range,
+.rating__range {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }

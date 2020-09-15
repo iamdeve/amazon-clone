@@ -5,19 +5,30 @@ import ReactImageMagnify from 'react-image-magnify';
 import Chip from '@material-ui/core/Chip';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
+import { useStateValue } from '../../../store/StateProvider';
+import { actionTypes } from '../../../store/reducer';
 function Products({ product }) {
 	// console.log(product.images)
+	const [{ cart, total }, dispatch] = useStateValue();
 	const [colorBorder, setColorBorder] = useState(1);
-	const [qty, setQty] = useState(1);
+	const [qty, setQty] = useState(0);
 	const [mainImgUrl, setMainImgUrl] = useState(product.images[0]);
 	const changeMainImgHandler = (imgUrl) => {
 		setMainImgUrl(imgUrl);
 	};
 	const addQtyHandler = () => {
 		setQty(qty + 1);
+		dispatch({
+			type: actionTypes.ADD_ITEM_QTY,
+			total:product.price + product.price,
+		});
 	};
 	const deleteQtyHandler = () => {
 		setQty(qty - 1);
+		dispatch({
+			type: actionTypes.REMOVE_ITEM_QTY,
+			total:total - product.price,
+		});
 	};
 	const selectColorHandler = (id) => {
 		[0, 1, 2].forEach((i) => {
@@ -41,6 +52,12 @@ function Products({ product }) {
 		console.log(chip);
 		chip.style.setProperty('border', '2px solid orange', '!important');
 		chip.style.boxShadow = '0 0 0 2px orange';
+	};
+	const addToCart = () => {
+		dispatch({
+			type: actionTypes.ADD_TO_CART,
+			item: product,
+		});
 	};
 	return (
 		<div className={classes.single__products}>
@@ -199,11 +216,11 @@ function Products({ product }) {
 								</div>
 								<div className={classes.item__shipping}>
 									<span>Shipping Price</span>
-									<pan> + ${product.shipping}</pan>
+									<span> + ${product.shipping}</span>
 								</div>
 								<div className={classes.total__price}>
 									<span>Total</span>
-									<pan> $111</pan>
+									<span>${total.toFixed(2)}</span>
 								</div>
 								<div className={classes.qty}>
 									<span>Qty</span>
@@ -214,9 +231,9 @@ function Products({ product }) {
 									</div>
 								</div>
 								<div className={classes.btn__add__to__card}>
-									<button>
+									<button onClick={addToCart}>
 										<span className={classes.add__to__cart_icon}></span>
-										<span>Add to Cart</span>
+										<span>{cart.filter((i) => i.id === product.id).length > 0 ? 'Added to Card' : 'Add to Cart'}</span>
 									</button>
 								</div>
 								<div className={classes.btn__checout}>
@@ -226,7 +243,7 @@ function Products({ product }) {
 									</button>
 								</div>
 								<div className={classes.deliver__add}>
-									<span></span> <Link>Deliver to Pakistan</Link>
+									<span></span> <Link to='/'>Deliver to Pakistan</Link>
 								</div>
 							</div>
 						</div>

@@ -1,0 +1,42 @@
+.cart__wrapper {
+	margin: 1rem;
+}
+.item__wrapper {
+	background: #fff;
+	display: flex;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+.item__desc {
+	flex: 1;
+}
+
+.item__wrapper div {
+	margin: 0 0.5rem;
+}
+.item__img img {
+	width: 10rem;
+	height: 10rem;
+}
+.item__price {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.remove__btn {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0.2rem;
+	background-color: var(--signin-btn-bg);
+	border: 1px solid #000;
+	font-size: 14px;
+}
+.remove__btn span:first-child {
+	background-color: #2f3841;
+	color: #fff;
+	display: inline-block;
+	margin: 0.2rem;
+	border-radius: 3px;
+}

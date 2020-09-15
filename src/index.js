@@ -11,11 +11,11 @@ import { StateProvider } from './store/StateProvider';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Router>
-			<StateProvider initialState={initialState} reducer={reducer}>
+		<StateProvider initialState={initialState} reducer={reducer}>
+			<Router>
 				<App />
-			</StateProvider>
-		</Router>
+			</Router>
+		</StateProvider>
 	</React.StrictMode>,
 	document.getElementById('root'),
 );
