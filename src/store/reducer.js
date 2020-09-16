@@ -53,22 +53,20 @@ const reducer = (state, action) => {
 			};
 		case actionTypes.REMOVE_FROM_CART:
 			let cart = state.cart.filter((item) => item.id !== action.itemId.id);
-			state.total = state.total - parseFloat(action.itemId.price) - (action.itemId.shipping ? parseFloat(action.itemId.shipping) : 0);
+			state.total = (state.total - parseFloat(action.itemId.price))- (action.itemId.shipping ? parseFloat(action.itemId.shipping) : 0);
 			return {
 				...state,
 				cart: cart,
 			};
 		case actionTypes.ADD_ITEM_QTY:
-			let total = state.total + parseFloat(action.total);
 			return {
 				...state,
-				total: total,
+				total: action.total,
 			};
 		case actionTypes.REMOVE_ITEM_QTY:
-			let rtotal = state.total - parseFloat(action.total);
 			return {
 				...state,
-				total: rtotal,
+				total: action.total,
 			};
 		default:
 			return state;

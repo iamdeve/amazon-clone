@@ -235,11 +235,11 @@
 	top: -15px;
     left: 37%;
 }
-.top__bar_dropdown{
+.account__dropdown__wrapper,.top__bar_dropdown{
 	position: relative;
 	
 }
-.top__bar_dropdown_menu {
+.top__bar_dropdown_account__list,.top__bar_dropdown_menu {
 	display: none;
 	list-style: none;
 	position: absolute;
@@ -262,9 +262,22 @@
 	margin:.3rem 0;
 }
 .topbar__nav__right .language__dropdown:hover .top__bar_dropdown_menu,
+.topbar__nav__right .account_list:hover .top__bar_dropdown_account__list,
 .topbar__nav__right .language__dropdown:hover  .back__drop {
 	display: block;
 }
 .top__bar_dropdown__menu div {
 	padding: 0 0.5rem;
+}
+
+.sign__btn{
+	display: block;
+	border-radius: 0;
+	width: 100%;
+	border: 1px solid !important;
+	text-align: center;
+}
+.sign__btn:hover{
+	text-decoration: none;
+	color: #fff;
 }

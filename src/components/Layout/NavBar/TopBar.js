@@ -6,12 +6,12 @@ import { Dropdown, DropdownButton, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import PK from '../../../assets/pk.jpg';
-import { useStateValue } from '../../../store/StateProvider'
+import { useStateValue } from '../../../store/StateProvider';
 // const languages = ['English - EN', 'Español - ES', '简体中文 - ZH', 'Deutsch - DE', 'Português - PT', '繁體中文 - ZH', '한국어 - KO', 'עברית - HE'];
 function TopBar() {
 	const [focused, setFocused] = useState(false);
 
-	const [{cart}, dispatch] = useStateValue()
+	const [{ cart }, dispatch] = useStateValue();
 	const inputFocusHandler = (e) => {
 		setFocused(true);
 	};
@@ -96,12 +96,18 @@ function TopBar() {
 				</div>
 
 				<div className={classes.account_list}>
-					<Button id='account_list'>
-						<span className={classes.nav__small_text}>Hello, Sign In</span>
-						<span className={classes.nav__big__text}>
-							Account &amp; List &nbsp;<i className='fa fa-caret-down'></i>
-						</span>
-					</Button>
+					<div className={classes.account__dropdown__wrapper}>
+						<Button id='account_list'>
+							<span className={classes.nav__small_text}>Hello, Sign In</span>
+							<span className={classes.nav__big__text}>
+								Account &amp; List &nbsp;<i className='fa fa-caret-down'></i>
+							</span>
+						</Button>
+						<ul className={classes.top__bar_dropdown_account__list}>
+							<div className={classes.arrow__up}></div>
+							<Link className={['btn-custom', classes.sign__btn].join(' ')} to='/sign-in'>Sign In</Link>
+						</ul>
+					</div>
 				</div>
 
 				<div className={classes.return}>

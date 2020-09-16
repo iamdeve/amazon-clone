@@ -4,7 +4,9 @@ import classes from './Home.module.css';
 import Slider from '../Layout/Slider/Slider';
 import CustomCarousel from '../Layout/CustomCarousel/CustomCarousel';
 import BackToTop from '../Layout/BackToTop/BackToTop';
-
+import { TopBar, BottomBar, CustomToaster } from '../Layout/NavBar';
+import FooterTop from '../Layout/Footer/FooterTop';
+import FooterBottom from '../Layout/Footer/FooterBottom';
 import Slide1 from '../../assets/slider-bg-1.jpg';
 import Slide2 from '../../assets/slider-bg-2.jpg';
 import Slide3 from '../../assets/slider-bg-3.jpg';
@@ -70,16 +72,23 @@ function Home() {
 	}, []);
 	const [{ data }, dispatch] = useStateValue();
 	return (
-		<div className={classes.app__home}>
-			<Slider slides={slides} topCategoryData={top_category_data} />
-			<CustomCarousel data={discover_amz_data} heading='Discover Amazon' customLink='Click to learn more' />
-			<div className={classes.app__category__wrapper}>
-				{data.map((category, id) => (
-					<CustomCarousel key={id} info={false} data={category.products} heading={category.heading} customLink={category.link} />
-				))}
+		<>
+			<TopBar />
+			<BottomBar />
+			<CustomToaster toast='We are delivering to your region with limited shipping options. Please expect extended delivery time.' link='/' />
+			<div className={classes.app__home}>
+				<Slider slides={slides} topCategoryData={top_category_data} />
+				<CustomCarousel data={discover_amz_data} heading='Discover Amazon' customLink='Click to learn more' />
+				<div className={classes.app__category__wrapper}>
+					{data.map((category, id) => (
+						<CustomCarousel key={id} info={false} data={category.products} heading={category.heading} customLink={category.link} />
+					))}
+				</div>
 			</div>
-			<BackToTop />
-		</div>
+				<BackToTop />
+				<FooterTop />
+				<FooterBottom />
+		</>
 	);
 }
 

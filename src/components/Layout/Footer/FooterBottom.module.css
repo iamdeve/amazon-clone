@@ -23,6 +23,9 @@
 	white-space: pre-line;
 	text-decoration: none;
 }
+.links a:hover span:first-child{
+	color:#fff
+}
 .links a:hover span{
 	text-decoration: underline;
 }

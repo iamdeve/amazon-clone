@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import classes from './Products.module.css';
 import ReactImageMagnify from 'react-image-magnify';
@@ -13,22 +13,44 @@ function Products({ product }) {
 	const [colorBorder, setColorBorder] = useState(1);
 	const [qty, setQty] = useState(0);
 	const [mainImgUrl, setMainImgUrl] = useState(product.images[0]);
+	useEffect(() => {
+		return () => {
+			setQty(0);
+		};
+	}, []);
 	const changeMainImgHandler = (imgUrl) => {
 		setMainImgUrl(imgUrl);
 	};
 	const addQtyHandler = () => {
 		setQty(qty + 1);
+		console.log(total, parseFloat(product.price));
 		dispatch({
 			type: actionTypes.ADD_ITEM_QTY,
-			total:product.price + product.price,
+			total: total + parseFloat(product.price),
 		});
 	};
 	const deleteQtyHandler = () => {
-		setQty(qty - 1);
-		dispatch({
-			type: actionTypes.REMOVE_ITEM_QTY,
-			total:total - product.price,
-		});
+		if (qty - 1 === -1) {
+			console.log(qty - 1 === -1);
+			console.log(qty);
+			return;
+		} else {
+			setQty(qty - 1);
+
+			if (qty === 1 && cart.filter((i) => i.id === product.id).length > 0) {
+				console.log(total - parseFloat(product.price) - parseFloat(product.shipping));
+				dispatch({
+					type: actionTypes.REMOVE_ITEM_QTY,
+					total: total - parseFloat(product.price) - parseFloat(product.shipping),
+				});
+			} else {
+				console.log(total - parseFloat(product.price));
+				dispatch({
+					type: actionTypes.REMOVE_ITEM_QTY,
+					total: total - parseFloat(product.price),
+				});
+			}
+		}
 	};
 	const selectColorHandler = (id) => {
 		[0, 1, 2].forEach((i) => {
@@ -54,6 +76,7 @@ function Products({ product }) {
 		chip.style.boxShadow = '0 0 0 2px orange';
 	};
 	const addToCart = () => {
+		setQty(qty + 1);
 		dispatch({
 			type: actionTypes.ADD_TO_CART,
 			item: product,
@@ -222,6 +245,8 @@ function Products({ product }) {
 									<span>Total</span>
 									<span>${total.toFixed(2)}</span>
 								</div>
+								{cart.filter((i) => i.id === product.id).length > 0 ? (
+
 								<div className={classes.qty}>
 									<span>Qty</span>
 									<span>{qty}</span>
@@ -230,6 +255,7 @@ function Products({ product }) {
 										<button onClick={addQtyHandler}>+</button>
 									</div>
 								</div>
+								) : null}
 								<div className={classes.btn__add__to__card}>
 									<button onClick={addToCart}>
 										<span className={classes.add__to__cart_icon}></span>

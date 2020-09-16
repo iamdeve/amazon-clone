@@ -51,7 +51,7 @@
 .product_description ul li {
 	font-size: 14px;
 }
-.list__price span:last-child() {
+.list__price span:last-child {
 	text-decoration: line-through;
 }
 .product__price {

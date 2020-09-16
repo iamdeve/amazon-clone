@@ -15,14 +15,24 @@ body {
 	background: var(--context-bg) !important;
 }
 
+
 .btn-custom {
+	display: block;
 	background: #f0c14b;
 	border-color: #a88734 #9c7e31 #846a29;
 	width: 100%;
 	color: #111;
 	border-radius: 5px;
 	font-size: 14px;
-	padding: 0.3rem;
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 1px solid;
+	text-align: center;
+
+}
+.btn-custom:hover{
+	text-decoration: none;
+	color: #777;
 }
 .react-multiple-carousel__arrow--right,
 .react-multiple-carousel__arrow--left {
@@ -43,4 +53,9 @@ body {
 .react-multiple-carousel__arrow::before {
 	font-size: 24px;
 	color: #444 !important;
+}
+
+a:hover{
+	color: orange !important;
+	text-decoration: underline !important;
 }

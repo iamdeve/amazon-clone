@@ -1,0 +1,59 @@
+.signin__wrapper {
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+.signin__form__wrapper {
+	width: 25vw;
+	border: 1px solid #ccc;
+	margin: 1rem 0;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form button,
+.from input {
+	margin: 1rem 0;
+}
+.form label {
+	margin-bottom: 0;
+}
+
+.terms {
+	margin: 1rem 0;
+	font-size: 12px;
+}
+.need__help {
+	margin: 1rem 0;
+	font-size: 14px;
+}
+.need__help span:nth-child(1) {
+	color: #ccc;
+}
+.need__help span:nth-child(2) {
+	color: #007bff;
+}
+.need__help span:nth-child(2):hover {
+	color: orange;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.signin__header span {
+	display: inline-block;
+	background-image: url(../../assets/n-sprite.png);
+	background-position: -5px -130px;
+	height: 31px;
+	width: 103px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: top;
+}

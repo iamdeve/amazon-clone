@@ -22,7 +22,7 @@ function CategoryBox({ heading, images, footer, id }) {
 					) : images.length > 0 ? (
 						<img className={classes.cat__box_img} src={images[0]} alt={heading} />
 					) : (
-						<button className='btn-custom'>{footer}</button>
+						<Link to="/sign-in" className='btn-custom'>{footer}</Link>
 					)}
 				</div>
 			</div>
