@@ -54,9 +54,11 @@ function Products({ product }) {
 	};
 	const selectColorHandler = (id) => {
 		[0, 1, 2].forEach((i) => {
-			let prevChip = $(`#chip__color__${i}`)[0];
-			prevChip.style.setProperty('border', 'none', '!important');
-			prevChip.style.boxShadow = 'none';
+			if($(`#chip__color__${i}`)[0]){
+				let prevChip = $(`#chip__color__${i}`)[0];
+				prevChip.style.setProperty('border', 'none', '!important');
+				prevChip.style.boxShadow = 'none';
+			}
 		});
 		let chip = $(`#chip__color__${id}`)[0];
 		console.log(chip);
@@ -257,7 +259,7 @@ function Products({ product }) {
 								</div>
 								) : null}
 								<div className={classes.btn__add__to__card}>
-									<button onClick={addToCart}>
+									<button disabled={cart.filter((i) => i.id === product.id).length > 0} onClick={addToCart}>
 										<span className={classes.add__to__cart_icon}></span>
 										<span>{cart.filter((i) => i.id === product.id).length > 0 ? 'Added to Card' : 'Add to Cart'}</span>
 									</button>

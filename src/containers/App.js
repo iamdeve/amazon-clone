@@ -6,6 +6,8 @@ import Home from '../components/Home/Home';
 import Shop from '../components/Shop/Shop';
 import Cart from '../components/Cart/Cart';
 import SignIn from "../components/Membership/SignIn";
+import SignUp from "../components/Membership/SignUp";
+import Logout from "../components/Membership/Logout";
 function App() {
 	return (
 		<div className='app'>
@@ -17,6 +19,8 @@ function App() {
 				<Route path='/shop-now/:category/:product' exact component={Shop} />
 				<Route path='/cart' exact component={Cart} />
 				<Route path='/sign-in' exact component={SignIn} />
+				<Route path='/sign-up' exact component={SignUp} />
+				<Route path='/logout' exact component={Logout} />
 			</Switch>
 
 		</div>

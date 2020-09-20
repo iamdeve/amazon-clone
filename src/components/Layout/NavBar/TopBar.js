@@ -11,7 +11,7 @@ import { useStateValue } from '../../../store/StateProvider';
 function TopBar() {
 	const [focused, setFocused] = useState(false);
 
-	const [{ cart }, dispatch] = useStateValue();
+	const [{ cart, isAuthenticated }, dispatch] = useStateValue();
 	const inputFocusHandler = (e) => {
 		setFocused(true);
 	};
@@ -105,7 +105,15 @@ function TopBar() {
 						</Button>
 						<ul className={classes.top__bar_dropdown_account__list}>
 							<div className={classes.arrow__up}></div>
-							<Link className={['btn-custom', classes.sign__btn].join(' ')} to='/sign-in'>Sign In</Link>
+							{!isAuthenticated ? (
+								<Link className={['btn-custom', classes.sign__btn].join(' ')} to='/sign-in'>
+									Sign In
+								</Link>
+							) : (
+								<Link className={['btn-custom', classes.sign__btn].join(' ')} to='/logout'>
+									Logout
+								</Link>
+							)}
 						</ul>
 					</div>
 				</div>
