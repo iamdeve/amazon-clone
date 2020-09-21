@@ -65,6 +65,10 @@ function SignIn() {
 					type: actionTypes.SET_USER_AUTH,
 					auth: true,
 				});
+				dispatch({
+					type: actionTypes.SET_USER,
+					user: data,
+				});
 				history.push('/profile');
 			}
 		} catch (err) {

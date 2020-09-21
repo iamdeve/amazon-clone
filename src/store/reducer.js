@@ -3,8 +3,8 @@ export const initialState = {
 	data: [...data],
 	authenticate: false,
 	user: JSON.parse(localStorage.getItem('amzUser')) ? JSON.parse(localStorage.getItem('amzUser')) : null,
-	cart: [],
-	total: 0,
+	cart: JSON.parse(sessionStorage.getItem('userCart')).cart ? JSON.parse(sessionStorage.getItem('userCart')).cart : [],
+	total: JSON.parse(sessionStorage.getItem('userCart')).total ? JSON.parse(sessionStorage.getItem('userCart')).total:0,
 	isAuthenticated: JSON.parse(localStorage.getItem('amzUser')) ? true : false,
 };
 
@@ -50,6 +50,7 @@ const reducer = (state, action) => {
 			}
 			state.cart.push(action.item);
 			state.total = state.total + parseFloat(action.item.price) + (action.item.shipping ? parseFloat(action.item.shipping) : 0);
+			sessionStorage.setItem('userCart', JSON.stringify({cart:state.cart, total:state.total}))
 			return {
 				...state,
 				cart: state.cart,
@@ -57,6 +58,7 @@ const reducer = (state, action) => {
 		case actionTypes.REMOVE_FROM_CART:
 			let cart = state.cart.filter((item) => item.id !== action.itemId.id);
 			state.total = state.total - parseFloat(action.itemId.price) - (action.itemId.shipping ? parseFloat(action.itemId.shipping) : 0);
+			sessionStorage.setItem('userCart', JSON.stringify({cart:state.cart, total:state.total}))
 			return {
 				...state,
 				cart: cart,

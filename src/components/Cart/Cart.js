@@ -80,10 +80,10 @@ function Cart() {
 						<span>{cart.length} items</span>
 					</div>
 					<div className={classes.btn__checout}>
-						<button>
+						<Link to="checkout">
 							<span className={classes.check__icon}></span>
 							<span>Check Out</span>
-						</button>
+						</Link>
 					</div>
 					<div className={classes.total__amount}>
 						<span>Total Amount</span>
