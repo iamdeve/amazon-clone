@@ -3,8 +3,8 @@ export const initialState = {
 	data: [...data],
 	authenticate: false,
 	user: JSON.parse(localStorage.getItem('amzUser')) ? JSON.parse(localStorage.getItem('amzUser')) : null,
-	cart: JSON.parse(sessionStorage.getItem('userCart')).cart ? JSON.parse(sessionStorage.getItem('userCart')).cart : [],
-	total: JSON.parse(sessionStorage.getItem('userCart')).total ? JSON.parse(sessionStorage.getItem('userCart')).total:0,
+	cart: JSON.parse(sessionStorage.getItem('userCart'))?.cart ? JSON.parse(sessionStorage.getItem('userCart')).cart : [],
+	total: JSON.parse(sessionStorage.getItem('userCart'))?.total ? JSON.parse(sessionStorage.getItem('userCart')).total:0,
 	isAuthenticated: JSON.parse(localStorage.getItem('amzUser')) ? true : false,
 };
 
