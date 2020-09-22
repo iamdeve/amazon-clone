@@ -111,9 +111,12 @@ function TopBar() {
 									Sign In
 								</Link>
 							) : (
+								<>
+								<Link style={{display:"block", margin:'.2rem 0', color:'#000'}} to="profile">Profile</Link>
 								<Link className={['btn-custom', classes.sign__btn].join(' ')} to='/logout'>
 									Logout
 								</Link>
+								</>
 							)}
 						</ul>
 					</div>
