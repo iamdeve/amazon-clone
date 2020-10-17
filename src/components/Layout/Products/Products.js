@@ -3,12 +3,13 @@ import { Row, Col } from 'react-bootstrap';
 import classes from './Products.module.css';
 import ReactImageMagnify from 'react-image-magnify';
 import Chip from '@material-ui/core/Chip';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import $ from 'jquery';
 import { useStateValue } from '../../../store/StateProvider';
 import { actionTypes } from '../../../store/reducer';
 function Products({ product }) {
 	// console.log(product.images)
+	const history = useHistory();
 	const [{ cart, total }, dispatch] = useStateValue();
 	const [colorBorder, setColorBorder] = useState(1);
 	const [qty, setQty] = useState(0);
@@ -54,7 +55,7 @@ function Products({ product }) {
 	};
 	const selectColorHandler = (id) => {
 		[0, 1, 2].forEach((i) => {
-			if($(`#chip__color__${i}`)[0]){
+			if ($(`#chip__color__${i}`)[0]) {
 				let prevChip = $(`#chip__color__${i}`)[0];
 				prevChip.style.setProperty('border', 'none', '!important');
 				prevChip.style.boxShadow = 'none';
@@ -248,15 +249,14 @@ function Products({ product }) {
 									<span>${total.toFixed(2)}</span>
 								</div>
 								{cart.filter((i) => i.id === product.id).length > 0 ? (
-
-								<div className={classes.qty}>
-									<span>Qty</span>
-									<span>{qty}</span>
-									<div className={classes.qty__handlers}>
-										<button onClick={deleteQtyHandler}>-</button>
-										<button onClick={addQtyHandler}>+</button>
+									<div className={classes.qty}>
+										<span>Qty</span>
+										<span>{qty}</span>
+										<div className={classes.qty__handlers}>
+											<button onClick={deleteQtyHandler}>-</button>
+											<button onClick={addQtyHandler}>+</button>
+										</div>
 									</div>
-								</div>
 								) : null}
 								<div className={classes.btn__add__to__card}>
 									<button disabled={cart.filter((i) => i.id === product.id).length > 0} onClick={addToCart}>
@@ -265,7 +265,10 @@ function Products({ product }) {
 									</button>
 								</div>
 								<div className={classes.btn__checout}>
-									<button>
+									<button
+										onClick={() => {
+											history.push('/checkout');
+										}}>
 										<span className={classes.check__icon}></span>
 										<span>Check Out</span>
 									</button>

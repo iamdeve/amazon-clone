@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './CategoryBox.module.css';
 import { Link } from 'react-router-dom';
 
-function CategoryBox({ heading, images, footer, id }) {
+function CategoryBox({ heading, images, footer, id, show }) {
 	return (
 		<div className={classes.category__box}>
 			<div>
@@ -26,7 +26,7 @@ function CategoryBox({ heading, images, footer, id }) {
 					)}
 				</div>
 			</div>
-			<div className={classes.category__box__footer}>{id === 3 ? null : <Link to='/shop-now'>{footer}</Link>}</div>
+			<div className={classes.category__box__footer}>{id === 3 && show  ? null : <Link to='/shop-now'>{footer}</Link>}</div>
 		</div>
 	);
 }

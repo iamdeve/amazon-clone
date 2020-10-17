@@ -4,8 +4,10 @@ import Button from '@material-ui/core/Button';
 import { Grid, Typography } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+import { useHistory } from 'react-router-dom'
 import './CheckoutForm.css';
 import { useStateValue } from '../../store/StateProvider';
+import  db from '../../firebase'
 import Swal from 'sweetalert2';
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -54,11 +56,13 @@ const useOptions = () => {
 	return options;
 };
 const CheckoutForm = () => {
+	const history = useHistory()
 	const classes = useStyles();
 	const stripe = useStripe();
 	const elements = useElements();
 	const options = useOptions();
-	const [{ total }, dispatch] = useStateValue();
+	const [{ total, user, cart }, dispatch] = useStateValue();
+	console.log(user)
 	const [formState, setFormState] = useState({
 		firstName: '',
 		lastName: '',
@@ -118,6 +122,16 @@ const CheckoutForm = () => {
 			cardElement.clear();
 			cardCvcElement.clear();
 			cardExpElement.clear();
+			console.log(user)
+			db.collection('users').doc(user[0].id).collection('orders').add({
+				items:JSON.stringify(cart),
+				payment: JSON.stringify(paymentMethod),
+				total:total,
+				status : 'sent',
+				date: new Date,
+
+			})
+			sessionStorage.removeItem('userCart')
 			console.log(formState);
 			setFormState({
 				firstName: '',
@@ -126,6 +140,7 @@ const CheckoutForm = () => {
 				phone: '',
 				coupon: '',
 			});
+			history.push('/profile')
 			Swal.fire('Payment Received Successfully', '', 'success');
 		}
 	};
@@ -283,7 +298,7 @@ const CheckoutForm = () => {
 									</label>
 								</Grid>
 								<Button
-									disabled={total !== 0}
+									disabled={total === 0}
 									id='paymentButton'
 									type='submit'
 									style={{
@@ -295,19 +310,19 @@ const CheckoutForm = () => {
 										borderRadius: '5px',
 										border: '1px solid #000',
 									}}>
-									Checkout {`$${total}`}
+									Checkout {`$${total.toFixed(2)}`}
 								</Button>
 							</Grid>
 						</form>
 					</div>
 				</Grid>
-				<Grid xs={3}>
+				<Grid item xs={3}>
 					<div className={classes.total__wrapper}>
-						<Typography variant='h3' component='h4'>
+						<Typography variant='h4' component='h4'>
 							Total
 						</Typography>
-						<Typography variant='h1' component='h2'>
-							${total}
+						<Typography variant='h3' component='h2'>
+							${total.toFixed(2)}
 						</Typography>
 					</div>
 				</Grid>

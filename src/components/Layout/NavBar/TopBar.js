@@ -106,6 +106,7 @@ function TopBar() {
 						</Button>
 						<ul className={classes.top__bar_dropdown_account__list}>
 							<div className={classes.arrow__up}></div>
+							{/* {console.log(isAuthenticated)} */}
 							{!isAuthenticated ? (
 								<Link className={['btn-custom', classes.sign__btn].join(' ')} to='/sign-in'>
 									Sign In
@@ -130,7 +131,7 @@ function TopBar() {
 				</div>
 				<div className={classes.cart}>
 					<Link to='/cart'>
-						<span className={classes.cart__number}>{cart.length}</span>
+						<span className={classes.cart__number}>{cart?.length}</span>
 						<span className={[classes.nav__sprite, classes.nav__cart].join(' ')}></span>
 						<span className={classes.nav__big__text}>&nbsp; Cart</span>
 					</Link>

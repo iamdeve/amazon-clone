@@ -90,19 +90,21 @@
 .category__dropdown .btn-primary.dropdown-toggle:focus {
 	box-shadow: 0 0 0 0.2rem rgb(240 136 4) !important;
 }
-.from__input {
+.topbar__form__container .from__input {
 	flex: 1;
 }
-.from__input input {
+.topbar__form__container .from__input input {
 	width: 100%;
 	padding: 0.5rem;
 	outline: none;
 	border: none;
+	border-radius: 0;
+	margin:0
 }
-.Focus {
+.topbar__form__container.Focus {
 	border: 3px solid #f08804;
 	border-radius: 5px;
-	box-shadow: inset 0px 0px 0px 10px #f08804;
+	box-shadow: inset 0px 0px 0px 4px #f08804;
 }
 
 .form__icon button {

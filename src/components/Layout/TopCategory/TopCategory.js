@@ -8,7 +8,7 @@ function TopCategory({ topCategoryData }) {
 				<div className='row'>
 					{topCategoryData.map((data, id) => (
 						<div key={id} className='col-sm-3'>
-							<CategoryBox id={id} heading={data.heading} images={data.images} footer={data.action} />
+							<CategoryBox id={id} heading={data.heading} images={data.images} show={data.show} footer={data.action} />
 						</div>
 					))}
 				</div>

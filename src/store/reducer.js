@@ -18,6 +18,7 @@ export const actionTypes = {
 	REMOVE_ITEM_QTY: 'REMOVE_ITEM_QTY',
 	REMOVE_FROM_CART: 'REMOVE_FROM_CART',
 	REMOVE_AUTH: 'REMOVE_AUTH',
+	EMPTY_USER_CART:'EMPTY_USER_CART'
 };
 
 const reducer = (state, action) => {
@@ -73,11 +74,11 @@ const reducer = (state, action) => {
 				...state,
 				total: action.total,
 			};
-		case actionTypes.SET_USER:
-			return {
+		case actionTypes.SET_USER_AUTH:
+			return{
 				...state,
 				isAuthenticated: action.auth,
-			};
+			}
 		case actionTypes.REMOVE_AUTH:
 			if(!action.auth){
 				localStorage.removeItem('amzUser');

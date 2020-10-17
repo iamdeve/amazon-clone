@@ -21,6 +21,7 @@ import TopCatImg1_3 from '../../assets/top-category-img-3-4.png';
 import TopCatImg1_4 from '../../assets/top-category-img-4-4.png';
 import TopCatImg2 from '../../assets/top-category-img-1.jpg';
 import TopCatImg3 from '../../assets/top-category-img-2.jpg';
+import TopCatImg4 from '../../assets/top-category-img-3.jpg';
 
 import disocerAmz1 from '../../assets/discover-amz-1.png';
 import disocerAmz2 from '../../assets/discover-amz-2.jpg';
@@ -44,21 +45,31 @@ const top_category_data = [
 			{ img: TopCatImg1_4, title: 'Toy & Games' },
 		],
 		action: 'Shop Now',
+		
 	},
 	{
 		heading: 'Amazon Basics',
 		images: [TopCatImg2],
 		action: 'See More',
+		
 	},
 	{
 		heading: 'Electronics',
 		images: [TopCatImg3],
 		action: 'See More',
 	},
+
+	{
+		heading: 'Gifts',
+		images: [TopCatImg4],
+		action: 'See More',
+		
+	},
 	{
 		heading: 'Sign in for the best experience',
 		images: [],
 		action: 'Sign in securily',
+		show:false
 	},
 ];
 const discover_amz_data = [{ images: [disocerAmz1] }, { images: [disocerAmz2] }, { images: [disocerAmz3] }, { images: [disocerAmz4] }, { images: [disocerAmz5] }, { images: [disocerAmz6] }];
@@ -69,8 +80,14 @@ function Home() {
 			type: actionTypes.SET_DATA,
 			data: products,
 		});
+		if (isAuthenticated) {
+			top_category_data.pop();
+		}else{
+			top_category_data.splice(3,1)
+		}
 	}, []);
-	const [{ data }, dispatch] = useStateValue();
+	const [{ data, isAuthenticated }, dispatch] = useStateValue();
+
 	return (
 		<>
 			<TopBar />
@@ -85,9 +102,9 @@ function Home() {
 					))}
 				</div>
 			</div>
-				<BackToTop />
-				<FooterTop />
-				<FooterBottom />
+			<BackToTop />
+			<FooterTop />
+			<FooterBottom />
 		</>
 	);
 }

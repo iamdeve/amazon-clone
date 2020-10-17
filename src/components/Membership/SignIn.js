@@ -27,6 +27,7 @@ function SignIn() {
 	useEffect(() => {
 		var user = auth.currentUser;
 		console.log(user);
+		auth.signOut();
 		if (user !== null || isAuthenticated) {
 			history.push('cart');
 		}
@@ -49,7 +50,10 @@ function SignIn() {
 
 	const getUserData = async () => {
 		const snapshot = await db.collection('users').where('email', '==', signInForm.email).get();
-		return snapshot.docs.map((doc) => doc.data());
+		// const snapshot = await db.collection('users').get();
+		let user = snapshot.docs.map((doc) => doc.data())
+		user[0].id = snapshot.docs.map((doc) => doc.id)[0]
+		return user
 	};
 	const signIn = async () => {
 		try {
@@ -69,7 +73,7 @@ function SignIn() {
 					type: actionTypes.SET_USER,
 					user: data,
 				});
-				history.push('/profile');
+				history.push('/');
 			}
 		} catch (err) {
 			console.log(err);

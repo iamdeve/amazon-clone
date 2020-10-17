@@ -23,7 +23,7 @@ function Cart() {
 			<CustomToaster toast='We are delivering to your region with limited shipping options. Please expect extended delivery time.' link='/' />
 			<div className={classes.cart__wrapper}>
 				<div className={classes.cart__items}>
-					{cart.length > 0 ? (
+					{cart && cart.length > 0 ? (
 						cart.map((item, id) => {
 							return (
 								<div key={id} className={classes.item__wrapper}>
@@ -77,7 +77,7 @@ function Cart() {
 				<div className={classes.cart__items__totals}>
 					<div className={classes.total__items}>
 						<span>Total Items</span>
-						<span>{cart.length} items</span>
+						<span>{cart?.length} items</span>
 					</div>
 					<div className={classes.btn__checout}>
 						<Link to="checkout">
